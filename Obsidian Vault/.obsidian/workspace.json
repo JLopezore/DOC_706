@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Prueba para script.md",
+                "file": "Proyecto Horarios/Untitled.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Prueba para script"
+              "title": "Untitled"
             }
           }
         ],
@@ -186,8 +186,9 @@
   },
   "active": "69d88c6bb71c1939",
   "lastOpenFiles": [
-    "Proyecto Horarios/Requisitos del Proyecto de Horarios de Exámenes (Área de Salud).md",
     "Prueba para script.md",
+    "Proyecto Horarios/Untitled.md",
+    "Proyecto Horarios/Requisitos del Proyecto de Horarios de Exámenes (Área de Salud).md",
     "Proyecto Horarios/DB.md",
     "2025-10-10.md",
     "iNGENIERIA SOFTWARE/Refactorización usando svg para iconos.md",
