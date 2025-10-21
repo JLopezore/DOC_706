@@ -1,0 +1,16 @@
+.app-header {
+    background-color: #0056c6;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    }
+
+.themeSwitcher {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
