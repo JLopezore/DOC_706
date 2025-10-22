@@ -36,8 +36,8 @@ Razones
 - Basically Abaliable 
 - Soft State
 - Evetual consistency
-- Ideal para aplicaciones distribuidas y escalables; redes sociales 
-- 
+- Ideal para aplicaciones distribuidas y escalables; redes sociales, big data
+- B
 ## Definiciones
 ###  Federadas
 Un sistema de base de datos federados (Federated Database System, FDBS) es un modelo para conectar varías bases de datos independientes, que pueden ser distintos entre si, de modo que aparenten funcionar como una sola para el uso usuario, sin tener que combinar todos físicamente.
