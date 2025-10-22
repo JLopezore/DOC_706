@@ -1,21 +1,22 @@
-## Homogénea
+## Tipos de DB distribuidas
+### Homogénea
 -  Ocupan el mismo sistema manejador de base de datos 
-## Heterogénea
+### Heterogénea
 - Podrían utilizar distintos sistemas manejadores de base de datos 
 - Se necesita 
 - Agregar nuevas funcionalidades y nuevas bases de datos
 - Middleware
 
-## Federadas
+### Federadas
 - Múltiples bases de datos trabajan juntos como si fueran una.
 
-## Particionadas
+### Particionadas
 - Partes más pequeñas cada parte se almacena en un nodo diferente.
 
-## Híbridas
+### Híbridas
 - Combinan elementos de DB Federadas y DB Particionadas
 
-## Replicadas
+### Replicadas
 - Las copias de los datos se almacenan en multiples nodos
 - Hace replicas inmediatas 
 

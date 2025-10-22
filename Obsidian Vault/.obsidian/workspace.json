@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "BASE_DATOS_DISTRIBUIDAS/Tipos de DB distribuidas.md",
+                "file": "BASE_DATOS_DISTRIBUIDAS/DB distribuidas.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Tipos de DB distribuidas"
+              "title": "DB distribuidas"
             }
           }
         ],
@@ -187,7 +187,7 @@
   "active": "69d88c6bb71c1939",
   "lastOpenFiles": [
     "Proyecto Horarios/Reunión 2 API Calendarización.md",
-    "BASE_DATOS_DISTRIBUIDAS/Tipos de DB distribuidas.md",
+    "BASE_DATOS_DISTRIBUIDAS/DB distribuidas.md",
     "Prueba para script.md",
     "Proyecto Horarios/Requisitos del Proyecto de Horarios de Exámenes (Área de Salud).md",
     "Proyecto Horarios/DB.md",
