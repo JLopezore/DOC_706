@@ -20,7 +20,11 @@
 - Hace replicas inmediatas 
 
 ## Aplicaciones de BD Distribuidas
-
+Razones
+- Balanceo de carga (concurrencia) para evitar cuello de botella
+- Distribución global de los datos: Almacenar datos más cerca de los usuarios.
+- Escalabilidad eficiente: horizontal
+- 
 
 ## Definiciones
 ###  Federadas
