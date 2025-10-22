@@ -29,6 +29,15 @@ Razones
 - Localidad de datos y cumplimientos: Cumplimiento con normativa de gobernanza de datos
 - Alta disponibilidad y tolerancia a fallos:
 
+### ACID
+- Transacciones confiables y precisas
+- 
+### Base 
+- Basically Abaliable 
+- Soft State
+- Evetual consistency
+- Ideal para aplicaciones distribuidas y escalables; redes sociales 
+- 
 ## Definiciones
 ###  Federadas
 Un sistema de base de datos federados (Federated Database System, FDBS) es un modelo para conectar varías bases de datos independientes, que pueden ser distintos entre si, de modo que aparenten funcionar como una sola para el uso usuario, sin tener que combinar todos físicamente.
