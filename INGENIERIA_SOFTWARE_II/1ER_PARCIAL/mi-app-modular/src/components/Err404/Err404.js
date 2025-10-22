@@ -4,8 +4,13 @@ import './Err404.css';
 const Err404 = () => {
     return (
         <div className="err404-container">
-            <h2>Error 404: Página No Encontrada</h2>
-            <p>Lo sentimos, la página que buscas no existe.</p>
+            <h2>Ups... La página no se ha encontrado</h2>
+            <p>Intentea con los siguientes enlaces:</p>
+            <ul>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/tareas">Lista de Tareas</a></li>
+                <li><a href="/directorio">Directorio de Usuarios</a></li>
+            </ul>
         </div>
     );
 }
