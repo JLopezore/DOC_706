@@ -23,8 +23,10 @@
 Razones
 - Balanceo de carga (concurrencia) para evitar cuello de botella
 - Distribución global de los datos: Almacenar datos más cerca de los usuarios.
-- Escalabilidad eficiente: horizontal
-- 
+- Escalabilidad eficiente: horizontal y autónoma
+- Solicitudes más complejas 
+- Localidad de datos y cumplimientos: Cumplimiento con normativa de gobernanza de datos
+- Alta disponibilidad y tolerancia a fallos:
 
 ## Definiciones
 ###  Federadas
