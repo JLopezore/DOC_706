@@ -1,12 +1,13 @@
 import React from "react";  
 import './Err404.css';
+import img404 from './img404.svg';
 
 const Err404 = () => {
-    const imagenPath = "src/assets/404_image.png"; // Ruta de la imagen local
+    const imagenPath = "./img404.svg"; // Ruta de la imagen local
     return (
         
         <div className="err404-container">
-            <img src={imagenPath} alt="Página no encontrada" width="500" height="300"/>
+            <img src={imagenPath} alt="Página no encontrada" />
             <h1>Ups... La página no se ha encontrado</h1>
             <p>Intentea con los siguientes enlaces:</p>
             <ul>
