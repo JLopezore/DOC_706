@@ -5,7 +5,7 @@ const Err404 = () => {
     return (
         //<img src={"../Images/img404.svg"} alt="Placeholder" width="500" height="300"/>
         <div className="err404-container">
-            <img src={"../Images/img404.svg"} alt="Placeholder"/>
+            <img src={"./Images/img404.svg"} alt="Página no encontrada" width="500" height="300"/>
             <h1>Ups... La página no se ha encontrado</h1>
             <p>Intentea con los siguientes enlaces:</p>
             <ul>
