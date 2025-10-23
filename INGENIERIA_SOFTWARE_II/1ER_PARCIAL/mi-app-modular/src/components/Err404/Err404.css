@@ -34,14 +34,9 @@
   width: 100%;
   height: auto;
   margin-bottom: 30px;
-  border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-  animation: bounce 2s infinite;
 }
 
-.dark .err404-container img {
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-}
+
 
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {

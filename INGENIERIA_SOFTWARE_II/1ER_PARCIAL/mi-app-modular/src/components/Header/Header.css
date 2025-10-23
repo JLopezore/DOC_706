@@ -28,6 +28,21 @@
   gap: 30px;
 }
 
+.logo-image {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border-radius: 50%;
+  background-color: white;
+  padding: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.logo-image:hover {
+  transform: scale(1.1) rotate(5deg);
+}
+
 .logo {
   margin: 0;
   font-size: 1.5em;
