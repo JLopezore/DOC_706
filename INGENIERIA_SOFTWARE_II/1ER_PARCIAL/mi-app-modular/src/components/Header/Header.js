@@ -8,10 +8,10 @@ const Header = () => {
   return (
     <header className="app-header">
       <div className="logo-nav">
-        <div>
+        
           <img src={"https://logoeps.com/wp-content/uploads/2013/05/snoopy-character-vector.png"} alt="Logo" className="logo-image" />
           <h1 className="logo">Mi snoopy App</h1>
-        </div>
+       
         <div>
           <nav>
             {/* Usamos <Link> en lugar de <a href=""> */}
