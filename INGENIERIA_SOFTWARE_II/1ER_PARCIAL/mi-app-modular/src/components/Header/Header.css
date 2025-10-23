@@ -1,9 +1,12 @@
 .app-header {
-    background-color: #0056c6;
-    padding: 20px;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    }
+  background-color: #0056c6;
+  padding: 20px;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
 
 .themeSwitcher {
     position: absolute;
@@ -19,7 +22,6 @@
   /* ... (estilos existentes) ... */
   display: flex;
   justify-content: space-between;
-  align-items: center !important;
   align-content: center;
 }
 
