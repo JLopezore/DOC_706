@@ -53,7 +53,8 @@
 
 nav {
   display: flex;
-  gap: 200px;
+  gap: 25px;
+  font-size: 25px;
 }
 
 nav a { /* <Link> se renderiza como una <a>, así que podemos estilizarla */
