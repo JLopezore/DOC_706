@@ -27,8 +27,8 @@
 
 .logo-nav {
   display: flex;
-  align-items: left;
-  gap: 30px;
+  align-items: center;
+  gap: 300px;
 }
 
 .logo-image {
