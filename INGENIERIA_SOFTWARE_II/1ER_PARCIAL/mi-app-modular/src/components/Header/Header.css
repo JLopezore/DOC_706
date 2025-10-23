@@ -68,5 +68,8 @@ nav a:hover {
 .theme-switcher-container {
   justify-content: space-between;
   align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 100%;
 }
 
