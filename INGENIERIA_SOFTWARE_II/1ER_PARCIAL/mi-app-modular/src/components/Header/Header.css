@@ -66,5 +66,7 @@ nav a:hover {
   border-bottom-color: #61dafb; /* Color azul de React */}
 
 .theme-switcher-container {
-  
+  justify-content: space-between;
+  align-items: center;
 }
+
