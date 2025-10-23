@@ -64,3 +64,7 @@ nav a { /* <Link> se renderiza como una <a>, así que podemos estilizarla */
 
 nav a:hover {
   border-bottom-color: #61dafb; /* Color azul de React */}
+
+.theme-switcher-container {
+  ;
+}
