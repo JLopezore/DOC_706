@@ -1,9 +1,8 @@
 import React from "react";  
 import './Err404.css';
-import img404 from './img404.svg';
 
 const Err404 = () => {
-    const imagenPath = "./img404.svg"; // Ruta de la imagen local
+    const imagenPath = "https://www.myphukettravel.com/assets/front-end/images/404.gif"; // Ruta de la imagen 404 externa
     return (
         
         <div className="err404-container">
