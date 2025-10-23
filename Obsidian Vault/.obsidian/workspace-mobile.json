@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Proyecto Horarios/Reunión 2 API Calendarización.md",
+                "file": "Proyecto Horarios/Endpoints.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Reunión 2 API Calendarización"
+              "title": "Endpoints"
             }
           }
         ]
@@ -98,7 +98,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "Proyecto Horarios/Reunión 2 API Calendarización.md",
+            "file": "Proyecto Horarios/Endpoints.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -156,6 +156,8 @@
   },
   "active": "8e31ffc6d593b3d1",
   "lastOpenFiles": [
+    "Proyecto Horarios/Reunión 2 API Calendarización.md",
+    "Proyecto Horarios/Endpoints.md",
     "Proyecto Horarios/DB.md"
   ]
 }
