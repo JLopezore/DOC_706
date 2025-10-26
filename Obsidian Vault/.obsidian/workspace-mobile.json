@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Prueba para script.md",
+                "file": "Proyecto Horarios/Endpoints.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Prueba para script"
+              "title": "Endpoints"
             }
           }
         ]
@@ -156,8 +156,8 @@
   },
   "active": "8e31ffc6d593b3d1",
   "lastOpenFiles": [
-    "Proyecto Horarios/Endpoints.md",
     "Prueba para script.md",
+    "Proyecto Horarios/Endpoints.md",
     "BASE_DATOS_DISTRIBUIDAS/DB distribuidas.md",
     "Proyecto Horarios/Reunión 2 API Calendarización.md",
     "Proyecto Horarios/DB.md"
