@@ -15,7 +15,7 @@
               "state": {
                 "file": "TEC_WEB_II/1ER_SEMESTRE/Docker.md",
                 "mode": "source",
-                "source": true
+                "source": false
               },
               "icon": "lucide-file",
               "title": "Docker"
