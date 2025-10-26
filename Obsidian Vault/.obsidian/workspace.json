@@ -15,7 +15,7 @@
               "state": {
                 "file": "TEC_WEB_II/1ER_SEMESTRE/Docker.md",
                 "mode": "source",
-                "source": false
+                "source": true
               },
               "icon": "lucide-file",
               "title": "Docker"
@@ -171,15 +171,15 @@
   },
   "active": "69d88c6bb71c1939",
   "lastOpenFiles": [
+    "Proyecto Horarios/Endpoints.md",
+    "Proyecto Horarios/DB.md",
+    "TEC_WEB_II/1ER_SEMESTRE/Docker.md",
     "TEC_WEB_II/1ER_SEMESTRE",
     "Prueba para script.md",
-    "TEC_WEB_II/1ER_SEMESTRE/Docker.md",
     "TEC_WEB_II",
-    "Proyecto Horarios/DB.md",
     "Pasted image 20251024113845.png",
     "iNGENIERIA SOFTWARE/Base de datos.md",
     "PROBABILIDAD_ESTADISTICA/Reporte 1er parcial.md",
-    "Proyecto Horarios/Endpoints.md",
     "BASE_DATOS_DISTRIBUIDAS/Instalar CockroackDB.md",
     "BASE_DATOS_DISTRIBUIDAS/DB distribuidas.md",
     "Proyecto Horarios/Reunión 2 API Calendarización.md",
