@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TEC_WEB_II/1ER_SEMESTRE/Docker.md",
+                "file": "PROBABILIDAD_ESTADISTICA/Reporte 1er parcial.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Docker"
+              "title": "Reporte 1er parcial"
             }
           }
         ]
@@ -171,8 +171,8 @@
   },
   "active": "69d88c6bb71c1939",
   "lastOpenFiles": [
-    "Untitled.md",
     "TEC_WEB_II/1ER_SEMESTRE/Docker.md",
+    "Untitled.md",
     "Proyecto Horarios/Endpoints.md",
     "Proyecto Horarios/DB.md",
     "TEC_WEB_II/1ER_SEMESTRE",
