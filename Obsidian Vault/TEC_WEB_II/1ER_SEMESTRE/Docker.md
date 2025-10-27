@@ -26,3 +26,8 @@ Plataforma de software que permite a los desarrolladores crear, implementar y ej
 - Define qué se incluirá en la imagen y cómo se configurará.
 - Ej. Un Dockerfile que especifica una imagen base de Ubuntu y las instrucciones para instalar Node.js.
 #### Docker Hub
+- Un registro en línea donde los desarrolladores pueden almacenar y compartir imágenes de Docker.
+- Hay imágenes oficiales y de la comunidad.
+- Ej. Descargar una imagen de MySQL desde Docker Hub para usar en un proyecto.
+
+#### 
