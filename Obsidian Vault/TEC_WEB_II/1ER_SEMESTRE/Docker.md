@@ -6,8 +6,10 @@ Plataforma de software que permite a los desarrolladores crear, implementar y ej
 - Ej. Un contenedor que funciona en la computadora de un desarrollador funcionará igual en un servidor de producción.
 #### Escalabilidad
 - Facilita el despliegue y la escalabilidad de aplicaciones, permitiendo la orquestación con herramientas como Kubernetes.
-- Ej. Una aplicación puede escalar rápidamente de uno a muchos contenedores para manejar el aumento del tráfico
+- Ej. Una aplicación puede escalar rápidamente de uno a muchos contenedores para manejar el aumento del tráfico1
 #### Eficiencia
 - Los contenedores son ligeros
 - comparten el kernel del sistema operativo, reduciendo el uso de recursos en comparación con las máquinas virtuales.
 #### Consistencia
+- Garantiza que las aplicaciones funcionen de la misma manera en todos los entornos
+- Ej. Los desarrolladores pueden crear entornos de prueba que sean idénticos a los de producción.
