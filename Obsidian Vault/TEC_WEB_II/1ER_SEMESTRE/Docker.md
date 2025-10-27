@@ -30,4 +30,4 @@ Plataforma de software que permite a los desarrolladores crear, implementar y ej
 - Hay imágenes oficiales y de la comunidad.
 - Ej. Descargar una imagen de MySQL desde Docker Hub para usar en un proyecto.
 
-#### 
+#### 1
