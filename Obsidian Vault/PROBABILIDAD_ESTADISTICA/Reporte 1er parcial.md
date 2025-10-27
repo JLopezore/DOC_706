@@ -21,6 +21,8 @@ Graficar grafico de corelación
 ## Region y satisfecho instalaciones
 ## Carrera y Cafeteria
 ## Carrera y extras
+- Boxplots
+- Tabla
 ## Estatura y peso
 ## Estatura y calzado
 ## Semestre y Extra
