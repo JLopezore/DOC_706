@@ -5,8 +5,15 @@ otros: papaloapan, sierra norte
 Graficar grafico de corelación
 
 ## Peso y Beca 
+- Tabla
+- Boxplots
+- 
 ## Region y Tamaño
+
+
 ## Beca alimenticia y extraordinario
+- Tabla 
+- Boxplots
 
 ## Beca alimenticia y Nivel de satisfaccion
 
@@ -17,3 +24,12 @@ Graficar grafico de corelación
 ## Estatura y peso
 ## Estatura y calzado
 ## Semestre y Extra
+
+
+
+
+
+### Estatura y Beca
+- tabla
+- imagen
+- 
