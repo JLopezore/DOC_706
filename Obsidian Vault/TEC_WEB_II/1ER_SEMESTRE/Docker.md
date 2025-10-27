@@ -13,3 +13,16 @@ Plataforma de software que permite a los desarrolladores crear, implementar y ej
 #### Consistencia
 - Garantiza que las aplicaciones funcionen de la misma manera en todos los entornos
 - Ej. Los desarrolladores pueden crear entornos de prueba que sean idénticos a los de producción.
+### Conceptos
+#### Contenedor
+- instancias ejecutables de una imagen de Docker.
+- Ej. Un contenedor que ejecuta una aplicación web con todas sus dependencias.
+#### Imagen
+- Una plantilla de solo lectura utilizada para crear contenedores.
+- Las imágenes se pueden versionar y reutilizar.
+- Ej. Una imagen de Docker que contiene un servidor web Nginx configurado.
+#### Dockerfile
+- archivo de texto con un conjunto de instrucciones para construir una imagen.
+- Define qué se incluirá en la imagen y cómo se configurará.
+- Ej. Un Dockerfile que especifica una imagen base de Ubuntu y las instrucciones para instalar Node.js.
+#### Docker Hub
