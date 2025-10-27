@@ -1,8 +1,8 @@
 Licenciatura,Carrera Codificada,Semestre,Región de nacimiento,Estatura (en metros),Peso (en kg),Número de calzado (en cm),Número de hermanos,¿Cuenta con PC portátil?,¿Tiene beca alimenticia?,Número de exámenes extraordinarios que has presentado desde que iniciaste en la UNSIS.,Nivel de Satisfacción en la UNSIS,Años cumplidos,¿Qué tan satisfecho estás con las instalaciones de la UNSIS?,¿Qué opinas del servicio de la cafetería de la UNSIS?
-Licenciatura en Informática,S,7,Sierra Sur,1.7,70,25,2,Sí,No,0,3,21,5,4
-Licenciatura en Informática,S,6,Sierra Sur,1.69,60,26,3,Sí,No,0,4,23,4,3
-Licenciatura en Informática,S,7,Sierra Sur,1.74,75,27.5,2,Sí,No,0,4,21,3,5
-Licenciatura en Informática,S,7,Sierra Sur,1.69,67,27,2,Sí,No,2,3,21,4,3
+Informática,S,7,Sierra Sur,1.7,70,25,2,Sí,No,0,3,21,5,4
+Informática,S,6,Sierra Sur,1.69,60,26,3,Sí,No,0,4,23,4,3
+Informática,S,7,Sierra Sur,1.74,75,27.5,2,Sí,No,0,4,21,3,5
+Informática,S,7,Sierra Sur,1.69,67,27,2,Sí,No,2,3,21,4,3
 Licenciatura en Informática,S,6,Sierra Sur,1.69,70,26,3,Sí,No,1,4,21,5,4
 Licenciatura en Informática,S,7,Sierra Sur,1.73,75,27,3,No,No,2,4,22,5,3
 Licenciatura en Nutrición,AS,9,Sierra Sur,1.59,63,25,3,Sí,No,4,3,22,3,3
@@ -80,4 +80,3 @@ Licenciatura en Odontología,AS,3,Valles Centrales,1.6,55,25,2,Sí,Sí,2,5,19,4,
 Licenciatura en Ciencias Biomédicas,AS,1,Sierra Sur,1.55,49,23,2,No,No,0,2,19,3,3
 Licenciatura en Odontología,AS,7,Sierra Sur,1.68,70,25,1,Sí,No,0,5,21,5,3
 Licenciatura en Odontología,AS,7,Sierra Sur,1.74,70,27,1,Sí,No,2,4,23,5,4
-
