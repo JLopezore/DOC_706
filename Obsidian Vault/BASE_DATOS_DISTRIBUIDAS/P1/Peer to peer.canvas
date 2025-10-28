@@ -1,0 +1,10 @@
+{
+	"nodes":[
+		{"id":"a707f9dada50345d","type":"link","url":"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYDv1Yts_yoBlseqsLlcUFhegAZvYYR0_4M-QmxB1zrLQ9K9XpDHayuPoIBCfUXPOJR3YaDXMmpBnWkgc9KAnP7_SCw52YI7kmrdFbTNGrzWFzN_vjy2ktqexU6ONeFTOAwpOhB_sLrL4/s1600/p-to-p-a.PNG","x":-20,"y":-420,"width":400,"height":400},
+		{"id":"2d3d75108ce48634","type":"text","text":"**Global Conceptual Schema**","x":-380,"y":-420,"width":250,"height":60},
+		{"id":"aabbf9bfcd287765","type":"text","text":"**Local Conceptual Schema**","x":-380,"y":-320,"width":250,"height":60},
+		{"id":"b75a1c8c7066c7f6","type":"text","text":"**Local Internal Schema**","x":-380,"y":-220,"width":250,"height":60},
+		{"id":"bee7c3b8ff50155f","type":"text","text":"**External Schema**","x":-380,"y":-120,"width":250,"height":60}
+	],
+	"edges":[]
+}
