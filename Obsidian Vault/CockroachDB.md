@@ -1,0 +1,1 @@
+postgresql://elcurioso:<ENTER-SQL-USER-PASSWORD>@rapid-beaski-17010.j77.aws-us-east-2.cockroachlabs.cloud:26257/defaultdb?sslmode=verify-full
