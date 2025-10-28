@@ -3,7 +3,8 @@ import './TodoList.css';
 import TodoItem from '../TodoItem/TodoItem'; // <-- Importar el hijo
 import { db } from '../../firebaseConfig';
 import { collection, query, orderBy, onSnapshot, addDoc, doc, updateDoc, deleteDoc, serverTimestamp } from "firebase/firestore"; // <-- Importa funciones de Firestore
-import { useState } from 'react';
+
+import { useEffect } from 'react';
 
 const TodoList = () => {
   // El estado 'tasks' ahora empieza vacío
@@ -38,47 +39,46 @@ const TodoList = () => {
 
   }, []); // El '[]' asegura que esto se ejecute solo una vez
 
-  const [inputValue, setInputValue] = useState('');
 
   const handleAddTask = async (e) => { // La hacemos 'async'
-    e.preventDefault();
-    if (inputValue.trim() === '') return;
+  e.preventDefault();
+  if (inputValue.trim() === '') return;
 
-    // ¡En lugar de solo 'setTasks', escribimos en la BD!
-    await addDoc(collection(db, "tasks"), {
-      text: inputValue,
-      isComplete: false,
-      createdAt: serverTimestamp() // Marca de tiempo de Firebase
-    });
+  // ¡En lugar de solo 'setTasks', escribimos en la BD!
+  await addDoc(collection(db, "tasks"), {
+    text: inputValue,
+    isComplete: false,
+    createdAt: serverTimestamp() // Marca de tiempo de Firebase
+  });
 
-    setInputValue('');
-    // NOTA: No necesitamos 'setTasks' aquí.
-    // ¡'onSnapshot' detectará el nuevo documento y actualizará el estado por nosotros!
-  };
+  setInputValue('');
+  // NOTA: No necesitamos 'setTasks' aquí.
+  // ¡'onSnapshot' detectará el nuevo documento y actualizará el estado por nosotros!
+};
 
   // --- NUEVAS FUNCIONES ---
 
   // Función para marcar/desmarcar una tarea
   const handleToggleComplete = async (task) => { // Pasamos el objeto 'task' entero
-    // 1. Creamos una referencia al documento específico por su ID
-    const taskRef = doc(db, "tasks", task.id);
+  // 1. Creamos una referencia al documento específico por su ID
+  const taskRef = doc(db, "tasks", task.id);
 
-    // 2. Actualizamos ese documento
-    await updateDoc(taskRef, {
-      isComplete: !task.isComplete // Invertimos el valor
-    });
-    // De nuevo, ¡onSnapshot se encarga de actualizar la UI!
-  };
+  // 2. Actualizamos ese documento
+  await updateDoc(taskRef, {
+    isComplete: !task.isComplete // Invertimos el valor
+  });
+  // De nuevo, ¡onSnapshot se encarga de actualizar la UI!
+};
 
   // Función para eliminar una tarea
   const handleDeleteTask = async (idToDelete) => {
-    // 1. Creamos una referencia al documento
-    const taskRef = doc(db, "tasks", idToDelete);
+  // 1. Creamos una referencia al documento
+  const taskRef = doc(db, "tasks", idToDelete);
 
-    // 2. Borramos el documento
-    await deleteDoc(taskRef);
-    // ¡onSnapshot se encarga del resto!
-  };
+  // 2. Borramos el documento
+  await deleteDoc(taskRef);
+  // ¡onSnapshot se encarga del resto!
+};
 
   // --- RENDER ACTUALIZADO ---
 
@@ -101,12 +101,13 @@ const TodoList = () => {
           Mapeamos las tareas y por cada una, renderizamos un <TodoItem />
           pasándole los datos y las FUNCIONES como props.
         */}
-        {tasks.map(task => (
+                {tasks.map(task => (
           <TodoItem 
             key={task.id}
             task={task}
-            onToggleComplete={handleToggleComplete}
-            onDeleteTask={handleDeleteTask}
+            // ¡Pasa la función correctamente!
+            onToggleComplete={() => handleToggleComplete(task)} // Pasa el objeto 'task'
+            onDeleteTask={handleDeleteTask} // Esta ya pasaba solo el ID
           />
         ))}
       </ul>

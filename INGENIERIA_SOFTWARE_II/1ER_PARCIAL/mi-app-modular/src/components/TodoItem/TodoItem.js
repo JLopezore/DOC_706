@@ -9,7 +9,7 @@ const TodoItem = ({ task, onToggleComplete, onDeleteTask }) => {
         <input
           type="checkbox"
           checked={task.isComplete}
-          onChange={() => onToggleComplete(task.id)}
+          onChange={onToggleComplete} // ¡Ya no pasamos el ID aquí!
         />
         <span className="task-text">{task.text}</span>
       </div>
