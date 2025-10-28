@@ -1,7 +1,5 @@
 `tags: #db #distribuidos #arquitectura #MOC`
 
-## [[Sistemas de Administración de Bases de Datos Distribuidas (DDBMS)]]
-
 El objetivo principal de un [[DDBMS]] es operar como un sistema de administración de bases de datos centralizado, pero de forma **transparente** para el usuario. El usuario no debe ser consciente de que los datos están [[Fragmentación de Datos|fragmentados]] y [[Replicación de Datos|replicados]] en múltiples nodos.
 
 Para lograr esta [[Transparencia en DDBMS|transparencia]], el sistema debe gestionar internamente un conjunto complejo de funciones.
