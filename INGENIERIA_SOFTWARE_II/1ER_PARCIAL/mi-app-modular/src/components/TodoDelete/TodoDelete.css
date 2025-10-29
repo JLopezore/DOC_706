@@ -98,3 +98,19 @@
 .App.dark .todo-delete-container{
   background-color: #20232a;
 }
+
+.App.dark .TodoDelete-item {
+  background-color: #3a3f4b;
+}
+
+.App.dark .TodoDelete-item :hover {
+  background-color: #fefeff;
+}
+
+.App.dark .TodoDelete-text {
+  color: #ccc;
+}
+
+.App.dark .deleted-date {
+  color: #f6f0f0;
+}
