@@ -5,6 +5,7 @@ import { db } from '../../firebaseConfig';
 import { collection, query, orderBy, onSnapshot, addDoc, doc, deleteDoc, serverTimestamp } from "firebase/firestore"; // <-- Importa funciones de Firestore
 
 import { useEffect } from 'react';
+import TodoComplete from '../TodoComplete/TodoComplete';
 
 const TodoList = () => {
   // El estado 'tasks' ahora empieza vacío
@@ -117,6 +118,7 @@ const TodoList = () => {
           />
         ))}
       </ul>
+      <TodoComplete />
     </div>
   );
 };
