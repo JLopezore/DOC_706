@@ -6,10 +6,9 @@ import ThemeContext from './context/ThemeContext';
 // Importar el Layout y las Páginas
 import Layout from './components/Layout/Layout';
 import Home from './components/Home/Home';
-import TodoList from './components/TodoList/TodoList';
 import UserDirectory from './components/UserDirectory/UserDirectory';
 import Err404 from './components/Err404/Err404';
-import TodoComplete from './components/TodoComplete/TodoComplete';
+import Tasks from './components/Tasks/Tasks';
 
 function App() {
   const { theme } = useContext(ThemeContext);
