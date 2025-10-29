@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './TodoList.css';
 import TodoItem from '../TodoItem/TodoItem'; // <-- Importar el hijo
 import { db } from '../../firebaseConfig';
-import { collection, query, orderBy, onSnapshot, addDoc, doc, deleteDoc, serverTimestamp } from "firebase/firestore"; // <-- Importa funciones de Firestore
+import { collection, query, orderBy, onSnapshot, addDoc, doc, updateDoc, deleteDoc, serverTimestamp } from "firebase/firestore"; // <-- Importa funciones de Firestore
 
 import { useEffect } from 'react';
 
@@ -63,7 +63,7 @@ const TodoList = () => {
     // 1. Añadir la tarea a la colección 'completedTasks'
     await addDoc(collection(db, "completedTasks"), {
       text: taskToComplete.text,
-      createdAt: taskToComplete.createdAt, // Conserva la fecha de creación original
+      originalId: taskToComplete.id, // Guardamos el ID original por si acaso
       completedAt: serverTimestamp() // Marca de tiempo de cuando se completó
     });
 
@@ -73,19 +73,10 @@ const TodoList = () => {
     // ¡onSnapshot se encargará de actualizar la UI de ambas listas!
   };
 
-  // Función para "eliminar" una tarea (moverla a la papelera)
-  const handleDeleteTask = async (taskToDelete) => {
-    // 1. Añadir la tarea a la colección 'deletedTasks'
-    await addDoc(collection(db, "deletedTasks"), {
-      text: taskToDelete.text,
-      createdAt: taskToDelete.createdAt, // Conserva la fecha de creación original
-      deletedAt: serverTimestamp() // Marca de tiempo de cuando se eliminó
-    });
-
-    // 2. Eliminar la tarea de la colección original 'tasks'
-    await deleteDoc(doc(db, "tasks", taskToDelete.id));
-
-    // de nuevo, onSnapshot se encargará de actualizar la UI
+  // Función para eliminar una tarea (sin completar)
+  const handleDeleteTask = async (idToDelete) => {
+    const taskRef = doc(db, "tasks", idToDelete);
+    await deleteDoc(taskRef);
   };
 
   // --- RENDER ACTUALIZADO ---
@@ -113,9 +104,9 @@ const TodoList = () => {
           <TodoItem 
             key={task.id}
             task={task}
-            // ¡Pasa las nuevas funciones!
-            onToggleComplete={() => handleMarkAsComplete(task)} // Ahora solo completa
-            onDeleteTask={handleDeleteTask}
+            // ¡Pasa la función correctamente!
+            onToggleComplete={() => handleToggleComplete(task)} // Pasa el objeto 'task'
+            onDeleteTask={handleDeleteTask} // Esta ya pasaba solo el ID
           />
         ))}
       </ul>

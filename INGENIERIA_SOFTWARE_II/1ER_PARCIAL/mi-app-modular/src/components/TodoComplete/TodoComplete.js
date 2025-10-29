@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './TodoComplete.css';
 import { db } from '../../firebaseConfig';
-import { collection, query, orderBy, onSnapshot, doc, deleteDoc } from "firebase/firestore";
+import { collection, query, orderBy, onSnapshot, doc, deleteDoc, addDoc, serverTimestamp } from "firebase/firestore";
 
 const TodoComplete = () => {
   const [completedTasks, setCompletedTasks] = useState([]);
@@ -25,13 +25,24 @@ const TodoComplete = () => {
     return () => unsubscribe();
   }, []);
 
-  // --- ELIMINAR TAREA COMPLETADA ---
+  // --- ELIMINAR TAREA COMPLETADA (MOVER A PAPELERA) ---
   const handleDeleteCompletedTask = async (idToDelete) => {
-    const confirmed = window.confirm('¿Desea eliminar esta tarea de la lista de completadas?');
+    const confirmed = window.confirm('¿Mover esta tarea a la papelera?');
     if (!confirmed) return;
 
-    const taskRef = doc(db, "completedTasks", idToDelete);
-    await deleteDoc(taskRef);
+    // 1. Encontrar la tarea a mover
+    const taskToMove = completedTasks.find(task => task.id === idToDelete);
+    if (!taskToMove) return;
+
+    // 2. Añadir a la colección 'deletedTasks'
+    await addDoc(collection(db, "deletedTasks"), {
+      text: taskToMove.text,
+      createdAt: taskToMove.createdAt, // Conservar fecha de creación original
+      deletedAt: serverTimestamp()      // Añadir fecha de eliminación
+    });
+
+    // 3. Eliminar de la colección 'completedTasks'
+    await deleteDoc(doc(db, "completedTasks", idToDelete));
   };
 
   // --- FORMATEAR FECHA ---
