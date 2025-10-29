@@ -1,55 +1,63 @@
-/* TodoDelete.css
-    Estilo para el componente de tarea eliminada.
-*/
-
-/* Variables por defecto (puedes sobrescribirlas desde :root del proyecto) */
-:root {
-  --td-danger: #e74c3c;
-  --td-danger-strong: #c0392b;
-  --td-success: #2ecc71;
-  --td-success-strong: #27ae60;
-  --td-bg-hover: rgba(0, 0, 0, 0.04);
-  --td-radius: 8px;
-  --td-gap: 10px;
-  --td-font: 14px;
-}
-
-/* Contenedor principal del elemento de lista */
-.TodoDelete-item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: var(--td-gap);
-  padding: 12px 16px;
-  border-radius: var(--td-radius);
-  transition: background 150ms ease;
-  background: #fdf2f2; /* Fondo rojizo claro para indicar eliminado */
+.todo-delete-container {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 600px;
+  background-color: #fdf2f2;
   border: 1px solid #f8d7da;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
 }
 
-.TodoDelete-item:hover {
-  background: #fbecec;
+.todo-delete-container h2 {
+  color: #c0392b;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-/* Texto de la tarea */
-.TodoDelete-text {
-  font-size: var(--td-font);
-  line-height: 1.4;
-  color: #555;
-  text-decoration: line-through; /* Tachar texto para indicar que está eliminado */
-  flex-grow: 1;
-  margin: 0;
+.no-deleted-tasks {
+  text-align: center;
+  color: #777;
+  font-style: italic;
+}
+
+.todo-delete-container ul {
+  list-style-type: none;
   padding: 0;
 }
 
-/* Contenedor para los botones de acción */
+.TodoDelete-item {
+  padding: 15px;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  transition: background-color 0.2s;
+}
+
+.TodoDelete-item:hover {
+  background-color: #fbecec;
+}
+
+.TodoDelete-text {
+  flex-grow: 1;
+  color: #555;
+  text-decoration: line-through;
+}
+
+.deleted-date {
+  font-size: 0.85em;
+  color: #888;
+  white-space: nowrap;
+}
+
 .TodoDelete-actions {
   display: flex;
   gap: 8px;
   flex-shrink: 0;
 }
 
-/* Estilo base para los botones */
 .TodoDelete-btn {
   padding: 6px 12px;
   border-radius: 6px;
@@ -64,45 +72,22 @@
   transform: scale(0.97);
 }
 
-/* Botón de restaurar */
 .TodoDelete-restore {
-  background-color: var(--td-success);
+  background-color: #2ecc71;
   color: white;
-  border-color: var(--td-success);
+  border-color: #2ecc71;
 }
 
 .TodoDelete-restore:hover {
-  background-color: var(--td-success-strong);
-  box-shadow: 0 2px 8px rgba(46, 204, 113, 0.2);
+  background-color: #27ae60;
 }
 
-/* Botón de eliminar permanentemente */
 .TodoDelete-delete {
-  background-color: transparent;
-  color: var(--td-danger);
-  border-color: var(--td-danger);
+  background-color: #e74c3c;
+  color: white;
+  border-color: #e74c3c;
 }
 
 .TodoDelete-delete:hover {
-  background-color: var(--td-danger);
-  color: white;
-}
-
-/* Ajustes responsivos */
-@media (max-width: 480px) {
-  .TodoDelete-item {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .TodoDelete-actions {
-    width: 100%;
-    justify-content: flex-end;
-    margin-top: 8px;
-  }
-
-  .TodoDelete-btn {
-    font-size: 12px;
-    padding: 5px 10px;
-  }
+  background-color: #c0392b;
 }

@@ -1,52 +1,96 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './TodoDelete.css';
+import { db } from '../../firebaseConfig';
+import { collection, query, orderBy, onSnapshot, doc, deleteDoc, addDoc } from "firebase/firestore";
 
-/**
- * Componente para mostrar una tarea eliminada.
- * Props:
- * - text: string - texto de la tarea
- * - onRestore: function(index) - callback para restaurar la tarea
- * - onDelete: function(index) - callback para eliminar permanentemente
- * - index: number (opcional) - índice o id que se pasa a los callbacks
- */
-function TodoDelete({ text = '', onRestore, onDelete, index = null }) {
-    const handleRestore = () => {
-        if (typeof onRestore === 'function') {
-            onRestore(index);
-        }
-    };
+const TodoDelete = () => {
+  const [deletedTasks, setDeletedTasks] = useState([]);
 
-    const handlePermanentDelete = () => {
-        const confirmed = window.confirm('¿Eliminar permanentemente esta tarea? Esta acción no se puede deshacer.');
-        if (!confirmed) return;
-        if (typeof onDelete === 'function') {
-            onDelete(index);
-        }
-    };
+  // --- LEER TAREAS ELIMINADAS (GET) ---
+  useEffect(() => {
+    const collectionRef = collection(db, "deletedTasks");
+    const q = query(collectionRef, orderBy("deletedAt", "desc"));
 
-    return (
-        <li className="TodoDelete-item" role="listitem" aria-label={`Tarea eliminada: ${text}`}>
-            <span className="TodoDelete-text">{text}</span>
-            <div className="TodoDelete-actions">
+    const unsubscribe = onSnapshot(q, (querySnapshot) => {
+      const tasks = [];
+      querySnapshot.forEach((doc) => {
+        tasks.push({ 
+          ...doc.data(), 
+          id: doc.id 
+        });
+      });
+      setDeletedTasks(tasks);
+    });
+
+    return () => unsubscribe();
+  }, []);
+
+  // --- RESTAURAR TAREA ---
+  const handleRestoreTask = async (taskToRestore) => {
+    // Añadir de nuevo a la colección principal de tareas
+    await addDoc(collection(db, "tasks"), {
+      text: taskToRestore.text,
+      createdAt: taskToRestore.createdAt // O usar un nuevo timestamp si se prefiere
+    });
+    // Eliminar de la colección de tareas eliminadas
+    await deleteDoc(doc(db, "deletedTasks", taskToRestore.id));
+  };
+
+  // --- ELIMINAR TAREA PERMANENTEMENTE ---
+  const handlePermanentDelete = async (idToDelete) => {
+    const confirmed = window.confirm('¿Eliminar permanentemente esta tarea? Esta acción no se puede deshacer.');
+    if (!confirmed) return;
+    
+    const taskRef = doc(db, "deletedTasks", idToDelete);
+    await deleteDoc(taskRef);
+  };
+
+  // --- FORMATEAR FECHA ---
+  const formatDate = (timestamp) => {
+    if (!timestamp) return 'No date';
+    const date = timestamp.toDate();
+    return date.toLocaleString('es-ES', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+      hour: '2-digit',
+      minute: '2-digit'
+    });
+  };
+
+  return (
+    <div className="todo-delete-container">
+      <h2>Tareas Eliminadas</h2>
+      {deletedTasks.length === 0 ? (
+        <p className="no-deleted-tasks">No hay tareas eliminadas.</p>
+      ) : (
+        <ul>
+          {deletedTasks.map(task => (
+            <li key={task.id} className="TodoDelete-item">
+              <span className="TodoDelete-text">{task.text}</span>
+              <span className="deleted-date">
+                Eliminada: {formatDate(task.deletedAt)}
+              </span>
+              <div className="TodoDelete-actions">
                 <button
-                    type="button"
-                    className="TodoDelete-btn TodoDelete-restore"
-                    onClick={handleRestore}
-                    aria-label="Restaurar tarea"
+                  onClick={() => handleRestoreTask(task)}
+                  className="TodoDelete-btn TodoDelete-restore"
                 >
-                    Restaurar
+                  Restaurar
                 </button>
                 <button
-                    type="button"
-                    className="TodoDelete-btn TodoDelete-delete"
-                    onClick={handlePermanentDelete}
-                    aria-label="Eliminar permanentemente"
+                  onClick={() => handlePermanentDelete(task.id)}
+                  className="TodoDelete-btn TodoDelete-delete"
                 >
-                    Eliminar permanentemente
+                  Eliminar
                 </button>
-            </div>
-        </li>
-    );
-}
+              </div>
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+  );
+};
 
 export default TodoDelete;
