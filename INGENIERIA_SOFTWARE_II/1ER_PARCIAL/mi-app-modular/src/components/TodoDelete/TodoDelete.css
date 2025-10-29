@@ -94,3 +94,7 @@
 .TodoDelete-delete:hover {
   background-color: #c0392b;
 }
+
+.App.dark .todo-delete-container{
+  background-color: #20232a;
+}
