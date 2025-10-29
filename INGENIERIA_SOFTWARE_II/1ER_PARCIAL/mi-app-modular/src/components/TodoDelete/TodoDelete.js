@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import './TodoDelete.css';
 import { db } from '../../firebaseConfig';
 import { collection, query, orderBy, onSnapshot, doc, deleteDoc, addDoc } from "firebase/firestore";
+import IconTrash from '../Icons/IconTrash';
+import IconRestore from '../Icons/IconRestore';
 
 const TodoDelete = () => {
   const [deletedTasks, setDeletedTasks] = useState([]);
@@ -77,13 +79,13 @@ const TodoDelete = () => {
                   onClick={() => handleRestoreTask(task)}
                   className="TodoDelete-btn TodoDelete-restore"
                 >
-                  Restaurar
+                  <IconRestore />
                 </button>
                 <button
                   onClick={() => handlePermanentDelete(task.id)}
                   className="TodoDelete-btn TodoDelete-delete"
                 >
-                  Eliminar
+                  <IconTrash />
                 </button>
               </div>
             </li>
