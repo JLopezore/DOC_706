@@ -27,11 +27,22 @@ const TodoDelete = () => {
 
   // --- RESTAURAR TAREA ---
   const handleRestoreTask = async (taskToRestore) => {
-    // Añadir de nuevo a la colección principal de tareas
-    await addDoc(collection(db, "tasks"), {
-      text: taskToRestore.text,
-      createdAt: taskToRestore.createdAt // O usar un nuevo timestamp si se prefiere
-    });
+    if (taskToRestore.isComplete) {
+      // Si la tarea estaba completada, restaurar a 'completedTasks'
+      await addDoc(collection(db, "completedTasks"), {
+        text: taskToRestore.text,
+        originalId: taskToRestore.originalId,
+        completedAt: taskToRestore.createdAt // O el timestamp que corresponda
+      });
+    } else {
+      // Si no, restaurar a la lista principal 'tasks'
+      await addDoc(collection(db, "tasks"), {
+        text: taskToRestore.text,
+        isComplete: false,
+        createdAt: taskToRestore.createdAt // Conserva la fecha de creación original
+      });
+    }
+    
     // Eliminar de la colección de tareas eliminadas
     await deleteDoc(doc(db, "deletedTasks", taskToRestore.id));
   };

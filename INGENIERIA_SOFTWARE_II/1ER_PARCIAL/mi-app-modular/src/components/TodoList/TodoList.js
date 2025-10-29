@@ -73,10 +73,20 @@ const TodoList = () => {
     // ¡onSnapshot se encargará de actualizar la UI de ambas listas!
   };
 
-  // Función para eliminar una tarea (sin completar)
-  const handleDeleteTask = async (idToDelete) => {
-    const taskRef = doc(db, "tasks", idToDelete);
-    await deleteDoc(taskRef);
+  // Función para "eliminar" una tarea (moverla a la papelera)
+  const handleDeleteTask = async (taskToDelete) => {
+    // 1. Añadir la tarea a la colección 'deletedTasks'
+    await addDoc(collection(db, "deletedTasks"), {
+      text: taskToDelete.text,
+      originalId: taskToDelete.id,
+      createdAt: taskToDelete.createdAt, // Conserva la fecha de creación original
+      deletedAt: serverTimestamp() // Marca de tiempo de cuando se eliminó
+    });
+
+    // 2. Eliminar la tarea de la colección original 'tasks'
+    await deleteDoc(doc(db, "tasks", taskToDelete.id));
+
+    // de nuevo, onSnapshot se encargará de actualizar la UI
   };
 
   // --- RENDER ACTUALIZADO ---

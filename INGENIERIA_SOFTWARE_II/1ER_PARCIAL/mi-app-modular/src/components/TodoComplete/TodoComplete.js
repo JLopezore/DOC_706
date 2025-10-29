@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './TodoComplete.css';
 import { db } from '../../firebaseConfig';
-import { collection, query, orderBy, onSnapshot, doc, deleteDoc } from "firebase/firestore";
+import { collection, query, orderBy, onSnapshot, doc, deleteDoc, addDoc, serverTimestamp } from "firebase/firestore";
 
 const TodoComplete = () => {
   const [completedTasks, setCompletedTasks] = useState([]);
@@ -25,9 +25,19 @@ const TodoComplete = () => {
     return () => unsubscribe();
   }, []);
 
-  // --- ELIMINAR TAREA COMPLETADA ---
-  const handleDeleteCompletedTask = async (idToDelete) => {
-    const taskRef = doc(db, "completedTasks", idToDelete);
+  // --- ELIMINAR TAREA COMPLETADA (MOVER A PAPELERA) ---
+  const handleDeleteCompletedTask = async (taskToDelete) => {
+    // 1. Añadir a la colección de 'deletedTasks'
+    await addDoc(collection(db, "deletedTasks"), {
+      text: taskToDelete.text,
+      isComplete: true, // Marcar que estaba completada
+      originalId: taskToDelete.id,
+      createdAt: taskToDelete.completedAt, // Usar la fecha de completado como referencia
+      deletedAt: serverTimestamp()
+    });
+
+    // 2. Eliminar de la colección 'completedTasks'
+    const taskRef = doc(db, "completedTasks", taskToDelete.id);
     await deleteDoc(taskRef);
   };
 
@@ -59,7 +69,7 @@ const TodoComplete = () => {
                 Completada: {formatDate(task.completedAt)}
               </span>
               <button 
-                onClick={() => handleDeleteCompletedTask(task.id)}
+                onClick={() => handleDeleteCompletedTask(task)}
                 className="delete-btn"
               >
                 Eliminar
