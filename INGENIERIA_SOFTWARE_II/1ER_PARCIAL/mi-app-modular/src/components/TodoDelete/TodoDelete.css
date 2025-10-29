@@ -1,0 +1,108 @@
+/* TodoDelete.css
+    Estilo para el componente de tarea eliminada.
+*/
+
+/* Variables por defecto (puedes sobrescribirlas desde :root del proyecto) */
+:root {
+  --td-danger: #e74c3c;
+  --td-danger-strong: #c0392b;
+  --td-success: #2ecc71;
+  --td-success-strong: #27ae60;
+  --td-bg-hover: rgba(0, 0, 0, 0.04);
+  --td-radius: 8px;
+  --td-gap: 10px;
+  --td-font: 14px;
+}
+
+/* Contenedor principal del elemento de lista */
+.TodoDelete-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--td-gap);
+  padding: 12px 16px;
+  border-radius: var(--td-radius);
+  transition: background 150ms ease;
+  background: #fdf2f2; /* Fondo rojizo claro para indicar eliminado */
+  border: 1px solid #f8d7da;
+}
+
+.TodoDelete-item:hover {
+  background: #fbecec;
+}
+
+/* Texto de la tarea */
+.TodoDelete-text {
+  font-size: var(--td-font);
+  line-height: 1.4;
+  color: #555;
+  text-decoration: line-through; /* Tachar texto para indicar que está eliminado */
+  flex-grow: 1;
+  margin: 0;
+  padding: 0;
+}
+
+/* Contenedor para los botones de acción */
+.TodoDelete-actions {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+/* Estilo base para los botones */
+.TodoDelete-btn {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 150ms ease;
+}
+
+.TodoDelete-btn:active {
+  transform: scale(0.97);
+}
+
+/* Botón de restaurar */
+.TodoDelete-restore {
+  background-color: var(--td-success);
+  color: white;
+  border-color: var(--td-success);
+}
+
+.TodoDelete-restore:hover {
+  background-color: var(--td-success-strong);
+  box-shadow: 0 2px 8px rgba(46, 204, 113, 0.2);
+}
+
+/* Botón de eliminar permanentemente */
+.TodoDelete-delete {
+  background-color: transparent;
+  color: var(--td-danger);
+  border-color: var(--td-danger);
+}
+
+.TodoDelete-delete:hover {
+  background-color: var(--td-danger);
+  color: white;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 480px) {
+  .TodoDelete-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .TodoDelete-actions {
+    width: 100%;
+    justify-content: flex-end;
+    margin-top: 8px;
+  }
+
+  .TodoDelete-btn {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+}
