@@ -1,0 +1,96 @@
+.todo-delete-container {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 600px;
+  background-color: #fdf2f2;
+  border: 1px solid #f8d7da;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.todo-delete-container h2 {
+  color: #c0392b;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.no-deleted-tasks {
+  text-align: center;
+  color: #777;
+  font-style: italic;
+}
+
+.todo-delete-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.TodoDelete-item {
+  padding: 15px;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  transition: background-color 0.2s;
+}
+
+.TodoDelete-item:hover {
+  background-color: #fbecec;
+}
+
+.TodoDelete-text {
+  flex-grow: 1;
+  color: #555;
+  text-decoration: line-through;
+}
+
+.deleted-date {
+  font-size: 0.85em;
+  color: #888;
+  white-space: nowrap;
+}
+
+.TodoDelete-actions {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.TodoDelete-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 150ms ease;
+}
+
+.TodoDelete-btn:active {
+  transform: scale(0.97);
+}
+
+.TodoDelete-restore {
+  background-color: #2ecc71;
+  color: white;
+  border-color: #2ecc71;
+}
+
+.TodoDelete-restore:hover {
+  background-color: #27ae60;
+}
+
+.TodoDelete-delete {
+  background-color: #e74c3c;
+  color: white;
+  border-color: #e74c3c;
+}
+
+.TodoDelete-delete:hover {
+  background-color: #c0392b;
+}
