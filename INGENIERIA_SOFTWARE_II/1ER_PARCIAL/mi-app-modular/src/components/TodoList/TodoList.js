@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './TodoList.css';
 import TodoItem from '../TodoItem/TodoItem'; // <-- Importar el hijo
 import { db } from '../../firebaseConfig';
-import { collection, query, orderBy, onSnapshot, addDoc, doc, updateDoc, deleteDoc, serverTimestamp } from "firebase/firestore"; // <-- Importa funciones de Firestore
+import { collection, query, orderBy, onSnapshot, addDoc, doc, deleteDoc, serverTimestamp } from "firebase/firestore"; // <-- Importa funciones de Firestore
 
 import { useEffect } from 'react';
 
