@@ -63,7 +63,7 @@ const TodoList = () => {
     // 1. Añadir la tarea a la colección 'completedTasks'
     await addDoc(collection(db, "completedTasks"), {
       text: taskToComplete.text,
-      originalId: taskToComplete.id, // Guardamos el ID original por si acaso
+      createdAt: taskToComplete.createdAt, // Conserva la fecha de creación original
       completedAt: serverTimestamp() // Marca de tiempo de cuando se completó
     });
 
@@ -78,7 +78,6 @@ const TodoList = () => {
     // 1. Añadir la tarea a la colección 'deletedTasks'
     await addDoc(collection(db, "deletedTasks"), {
       text: taskToDelete.text,
-      originalId: taskToDelete.id,
       createdAt: taskToDelete.createdAt, // Conserva la fecha de creación original
       deletedAt: serverTimestamp() // Marca de tiempo de cuando se eliminó
     });
