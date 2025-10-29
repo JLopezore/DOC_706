@@ -58,27 +58,26 @@ const TodoList = () => {
 
   // --- NUEVAS FUNCIONES ---
 
-  // Función para marcar/desmarcar una tarea
-  const handleToggleComplete = async (task) => { // Pasamos el objeto 'task' entero
-  // 1. Creamos una referencia al documento específico por su ID
-  const taskRef = doc(db, "tasks", task.id);
+  // Función para marcar una tarea como completada
+  const handleMarkAsComplete = async (taskToComplete) => {
+    // 1. Añadir la tarea a la colección 'completedTasks'
+    await addDoc(collection(db, "completedTasks"), {
+      text: taskToComplete.text,
+      originalId: taskToComplete.id, // Guardamos el ID original por si acaso
+      completedAt: serverTimestamp() // Marca de tiempo de cuando se completó
+    });
 
-  // 2. Actualizamos ese documento
-  await updateDoc(taskRef, {
-    isComplete: !task.isComplete // Invertimos el valor
-  });
-  // De nuevo, ¡onSnapshot se encarga de actualizar la UI!
-};
+    // 2. Eliminar la tarea de la colección original 'tasks'
+    await deleteDoc(doc(db, "tasks", taskToComplete.id));
+    
+    // ¡onSnapshot se encargará de actualizar la UI de ambas listas!
+  };
 
-  // Función para eliminar una tarea
+  // Función para eliminar una tarea (sin completar)
   const handleDeleteTask = async (idToDelete) => {
-  // 1. Creamos una referencia al documento
-  const taskRef = doc(db, "tasks", idToDelete);
-
-  // 2. Borramos el documento
-  await deleteDoc(taskRef);
-  // ¡onSnapshot se encarga del resto!
-};
+    const taskRef = doc(db, "tasks", idToDelete);
+    await deleteDoc(taskRef);
+  };
 
   // --- RENDER ACTUALIZADO ---
 
@@ -105,9 +104,9 @@ const TodoList = () => {
           <TodoItem 
             key={task.id}
             task={task}
-            // ¡Pasa la función correctamente!
-            onToggleComplete={() => handleToggleComplete(task)} // Pasa el objeto 'task'
-            onDeleteTask={handleDeleteTask} // Esta ya pasaba solo el ID
+            // ¡Pasa las nuevas funciones!
+            onToggleComplete={() => handleMarkAsComplete(task)} // Ahora solo completa
+            onDeleteTask={handleDeleteTask}
           />
         ))}
       </ul>
