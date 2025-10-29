@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './TodoComplete.css';
 import { db } from '../../firebaseConfig';
 import { collection, query, orderBy, onSnapshot, doc, deleteDoc, addDoc, serverTimestamp } from "firebase/firestore";
+import IconTrash from '../Icons/IconTrash';
 
 const TodoComplete = () => {
   const [completedTasks, setCompletedTasks] = useState([]);
@@ -76,7 +77,7 @@ const TodoComplete = () => {
                 onClick={() => handleDeleteCompletedTask(task.id)}
                 className="delete-btn"
               >
-                Eliminar
+                <IconTrash />
               </button>
             </li>
           ))}

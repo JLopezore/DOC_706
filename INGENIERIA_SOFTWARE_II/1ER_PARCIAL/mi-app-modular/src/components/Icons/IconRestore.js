@@ -12,8 +12,8 @@ const IconRestore = ({ size = 18 }) => (
     strokeLinecap="round"
     strokeLinejoin="round"
   >
-    <polyline points="9 14 4 9 9 4"></polyline>
-    <path d="M20 20v-7a4 4 0 0 0-4-4H4"></path>
+    <polyline points="1 4 1 10 7 10"></polyline>
+    <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path>
   </svg>
 );
 
