@@ -8,7 +8,6 @@ import Layout from './components/Layout/Layout';
 import Home from './components/Home/Home';
 import UserDirectory from './components/UserDirectory/UserDirectory';
 import Err404 from './components/Err404/Err404';
-import Tasks from './components/Tasks/Tasks';
 import TodoList from './components/TodoList/TodoList';
 
 function App() {
