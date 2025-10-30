@@ -65,3 +65,15 @@
 .delete-btn:hover {
   background-color: #d32f2f;
 }
+
+.app.dark .todo-complete-container {
+  background-color: #1b3d8b;
+}
+
+.App.dark .todo-complete-container h2 {
+  color: #fff;
+}
+
+.App.dark .todo-complete-container li {
+  background-color: #3a3f4b;
+}
