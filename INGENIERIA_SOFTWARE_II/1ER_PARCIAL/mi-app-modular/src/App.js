@@ -9,6 +9,7 @@ import Home from './components/Home/Home';
 import UserDirectory from './components/UserDirectory/UserDirectory';
 import Err404 from './components/Err404/Err404';
 import Tasks from './components/Tasks/Tasks';
+import TodoList from './components/TodoList/TodoList';
 
 function App() {
   const { theme } = useContext(ThemeContext);
@@ -24,7 +25,7 @@ function App() {
 
           {/* Rutas Hijas */}
           <Route index element={<Home />} />
-          <Route path="tareas" element={<Tasks /> } />
+          <Route path="tareas" element={<TodoList /> } />
           <Route path="directorio" element={<UserDirectory />} />
 
           {/* Ruta "Catch-all" para 404 (No encontrado) */}

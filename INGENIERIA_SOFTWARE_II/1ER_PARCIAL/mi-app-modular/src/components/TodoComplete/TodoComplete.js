@@ -28,33 +28,15 @@ const TodoComplete = () => {
 
   // --- ELIMINAR TAREA COMPLETADA (MOVER A PAPELERA) ---
   const handleDeleteCompletedTask = async (idToDelete) => {
-    const confirmed = window.confirm('¿Mover esta tarea a la papelera?');
-    if (!confirmed) return;
-
-    try {
-      // 1. Obtener la referencia al documento que se va a mover
-      const docRef = doc(db, "completedTasks", idToDelete);
-      const docSnap = await getDoc(docRef);
-
-      if (!docSnap.exists()) {
-        console.error("No se encontró la tarea completada para eliminar.");
-        return;
-      }
-      const taskToMove = docSnap.data();
-
-      // 2. Añadir a la colección 'deletedTasks'
-      await addDoc(collection(db, "deletedTasks"), {
-        text: taskToMove.text,
-        createdAt: taskToMove.createdAt, // Conservar fecha de creación original
-        deletedAt: serverTimestamp()      // Añadir fecha de eliminación
-      });
-
-      // 3. Eliminar de la colección 'completedTasks'
-      await deleteDoc(docRef);
-    } catch (error) {
-      console.error("Error al mover la tarea a la papelera: ", error);
-      alert("Hubo un error al mover la tarea a la papelera. Por favor, inténtalo de nuevo.");
-    }
+    // 1. Añadir la tarea a la colección 'deletedTasks'
+        await addDoc(collection(db, "deletedTasks"), {
+          text: idToDelete.text,
+          createdAt: idToDelete.createdAt, // Conserva la fecha de creación original
+          deletedAt: serverTimestamp()      // Marca de tiempo de cuando se eliminó
+        });
+    
+        // 2. Eliminar la tarea de la colección original 'tasks'
+        await deleteDoc(doc(db, "tasks", idToDelete.id));
   };
 
   // --- FORMATEAR FECHA ---
