@@ -67,13 +67,18 @@
 }
 
 .app.dark .todo-complete-container {
-  background-color: #1b3d8b;
+  background-color: #000000;
 }
 
-.App.dark .todo-complete-container h2 {
+.app.dark .todo-complete-container h2 {
   color: #fff;
 }
 
-.App.dark .todo-complete-container li {
+.app.dark .todo-complete-container li {
   background-color: #3a3f4b;
+}
+
+.app.dark .completed-date {
+
+  color: #b30404;
 }
