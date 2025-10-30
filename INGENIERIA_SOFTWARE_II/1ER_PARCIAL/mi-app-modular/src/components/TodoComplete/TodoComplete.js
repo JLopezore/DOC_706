@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './TodoComplete.css';
 import { db } from '../../firebaseConfig';
-import { collection, query, orderBy, onSnapshot, doc, deleteDoc, addDoc, serverTimestamp } from "firebase/firestore";
+import { collection, query, orderBy, onSnapshot, doc, deleteDoc, addDoc, serverTimestamp, getDoc } from "firebase/firestore";
 import IconTrash from '../Icons/IconTrash';
 
 const TodoComplete = () => {
@@ -31,19 +31,30 @@ const TodoComplete = () => {
     const confirmed = window.confirm('¿Mover esta tarea a la papelera?');
     if (!confirmed) return;
 
-    // 1. Encontrar la tarea a mover
-    const taskToMove = completedTasks.find(task => task.id === idToDelete);
-    if (!taskToMove) return;
+    try {
+      // 1. Obtener la referencia al documento que se va a mover
+      const docRef = doc(db, "completedTasks", idToDelete);
+      const docSnap = await getDoc(docRef);
 
-    // 2. Añadir a la colección 'deletedTasks'
-    await addDoc(collection(db, "deletedTasks"), {
-      text: taskToMove.text,
-      createdAt: taskToMove.createdAt, // Conservar fecha de creación original
-      deletedAt: serverTimestamp()      // Añadir fecha de eliminación
-    });
+      if (!docSnap.exists()) {
+        console.error("No se encontró la tarea completada para eliminar.");
+        return;
+      }
+      const taskToMove = docSnap.data();
 
-    // 3. Eliminar de la colección 'completedTasks'
-    await deleteDoc(doc(db, "completedTasks", idToDelete));
+      // 2. Añadir a la colección 'deletedTasks'
+      await addDoc(collection(db, "deletedTasks"), {
+        text: taskToMove.text,
+        createdAt: taskToMove.createdAt, // Conservar fecha de creación original
+        deletedAt: serverTimestamp()      // Añadir fecha de eliminación
+      });
+
+      // 3. Eliminar de la colección 'completedTasks'
+      await deleteDoc(docRef);
+    } catch (error) {
+      console.error("Error al mover la tarea a la papelera: ", error);
+      alert("Hubo un error al mover la tarea a la papelera. Por favor, inténtalo de nuevo.");
+    }
   };
 
   // --- FORMATEAR FECHA ---
