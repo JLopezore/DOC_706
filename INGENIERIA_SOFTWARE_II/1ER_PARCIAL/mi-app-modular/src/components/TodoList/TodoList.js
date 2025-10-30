@@ -119,6 +119,7 @@ const TodoList = () => {
           />
         ))}
       </ul>
+      <h2>Historial</h2>
       <div className="todo-complete-container">
         <TodoComplete />
         <TodoDelete />
