@@ -95,3 +95,37 @@
 .App.dark .todo-list-container li {
   background-color: #3a3f4b;
 }
+
+/* --- Estilos para los botones de Historial --- */
+.history-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.history-btn {
+  padding: 8px 16px;
+  border: 1px solid #007bff;
+  background-color: transparent;
+  color: #007bff;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.history-btn:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.history-btn.active {
+  background-color: #007bff;
+  color: white;
+  box-shadow: 0 2px 5px rgba(0, 123, 255, 0.3);
+}
+
+.todo-history-container {
+  margin-top: 20px;
+}

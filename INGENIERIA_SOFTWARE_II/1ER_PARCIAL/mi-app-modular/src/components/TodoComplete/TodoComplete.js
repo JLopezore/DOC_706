@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './TodoComplete.css';
 import { db } from '../../firebaseConfig';
-import { collection, query, orderBy, onSnapshot, doc, deleteDoc, addDoc, serverTimestamp } from "firebase/firestore";
+import { collection, query, orderBy, onSnapshot, doc, deleteDoc, addDoc, serverTimestamp, getDoc } from "firebase/firestore";
 import IconTrash from '../Icons/IconTrash';
 
 const TodoComplete = () => {
@@ -31,19 +31,28 @@ const TodoComplete = () => {
     const confirmed = window.confirm('¿Mover esta tarea a la papelera?');
     if (!confirmed) return;
 
-    // 1. Encontrar la tarea a mover
+    // 1. Encontrar la tarea a mover en el estado local
     const taskToMove = completedTasks.find(task => task.id === idToDelete);
-    if (!taskToMove) return;
+    if (!taskToMove) {
+      console.error("No se encontró la tarea para mover.");
+      return;
+    }
 
-    // 2. Añadir a la colección 'deletedTasks'
-    await addDoc(collection(db, "deletedTasks"), {
-      text: taskToMove.text,
-      createdAt: taskToMove.createdAt, // Conservar fecha de creación original
-      deletedAt: serverTimestamp()      // Añadir fecha de eliminación
-    });
+    try {
+      // 2. Añadir a la colección 'deletedTasks'
+      await addDoc(collection(db, "deletedTasks"), {
+        text: taskToMove.text,
+        // Usar createdAt si existe, de lo contrario, usar completedAt como respaldo.
+        createdAt: taskToMove.createdAt || taskToMove.completedAt, 
+        deletedAt: serverTimestamp()      // Añadir fecha de eliminación
+      });
 
-    // 3. Eliminar de la colección 'completedTasks'
-    await deleteDoc(doc(db, "completedTasks", idToDelete));
+      // 3. Eliminar de la colección 'completedTasks'
+      await deleteDoc(doc(db, "completedTasks", idToDelete));
+    } catch (error) {
+      console.error("Error al mover la tarea a la papelera: ", error);
+      alert("Hubo un error al mover la tarea.");
+    }
   };
 
   // --- FORMATEAR FECHA ---
