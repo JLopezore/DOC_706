@@ -95,6 +95,41 @@
   background-color: #c0392b;
 }
 
+/* --- Estilos para los botones de historial --- */
+.history-toggle-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.toggle-btn {
+  padding: 8px 16px;
+  border: 1px solid #ddd;
+  background-color: #f0f0f0;
+  color: #555;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.toggle-btn:hover {
+  background-color: #e0e0e0;
+  border-color: #ccc;
+}
+
+.toggle-btn.active {
+  background-color: #3498db;
+  color: white;
+  border-color: #3498db;
+  font-weight: bold;
+}
+
+.history-container {
+  margin-top: 20px;
+}
+
 .App.dark .todo-delete-container{
   background-color: #20232a;
 }
@@ -113,4 +148,20 @@
 
 .App.dark .deleted-date {
   color: #f6f0f0;
+}
+
+.App.dark .toggle-btn {
+  background-color: #3a3f4b;
+  border-color: #555c69;
+  color: #e0e0e0;
+}
+
+.App.dark .toggle-btn:hover {
+  background-color: #4a505c;
+}
+
+.App.dark .toggle-btn.active {
+  background-color: #5a99d4;
+  border-color: #5a99d4;
+  color: #ffffff;
 }

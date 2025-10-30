@@ -12,6 +12,7 @@ const TodoList = () => {
   // El estado 'tasks' ahora empieza vacío
   const [tasks, setTasks] = useState([]); 
   const [inputValue, setInputValue] = useState('');
+  const [historyView, setHistoryView] = useState('completed');
 
   // --- LEER TAREAS (GET) ---
   // useEffect se ejecutará cuando el componente se monte
@@ -23,8 +24,7 @@ const TodoList = () => {
     const q = query(collectionRef, orderBy("createdAt", "asc"));
 
     // 3. onSnapshot es el ¡ESCUCHADOR EN TIEMPO REAL!
-    // Se dispara una vez al inicio y luego CADA VEZ que los datos cambian
-    const unsubscribe = onSnapshot(q, (querySnapshot) => {
+    // Se dispara una vez al inicio y luego CADA
       const newTasks = [];
       querySnapshot.forEach((doc) => {
         newTasks.push({ 
