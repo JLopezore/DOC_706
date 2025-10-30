@@ -10,9 +10,11 @@ import TodoDelete from '../TodoDelete/TodoDelete';
 
 const TodoList = () => {
   // El estado 'tasks' ahora empieza vacío
-  const [tasks, setTasks] = useState([]); 
+  const [tasks, setTasks] = useState([]);
   const [inputValue, setInputValue] = useState('');
-  const [historyView, setHistoryView] = useState('completed');
+  const [showCompleted, setShowCompleted] = useState(false);
+  const [showDeleted, setShowDeleted] = useState(false);
+
 
   // --- LEER TAREAS (GET) ---
   // useEffect se ejecutará cuando el componente se monte
@@ -24,11 +26,12 @@ const TodoList = () => {
     const q = query(collectionRef, orderBy("createdAt", "asc"));
 
     // 3. onSnapshot es el ¡ESCUCHADOR EN TIEMPO REAL!
-    // Se dispara una vez al inicio y luego CADA
+    // Se dispara una vez al inicio y luego CADA VEZ que la colección cambia.
+    const unsubscribe = onSnapshot(q, (querySnapshot) => {
       const newTasks = [];
       querySnapshot.forEach((doc) => {
-        newTasks.push({ 
-          ...doc.data(), 
+        newTasks.push({
+          ...doc.data(),
           id: doc.id // El ID del documento es importante
         });
       });
@@ -120,12 +123,21 @@ const TodoList = () => {
         ))}
       </ul>
       <h2>Historial</h2>
-      <div className="todo-complete-container">
-        <TodoComplete />
-        <TodoDelete />
+      <div className="history-buttons">
+        <button onClick={() => { setShowCompleted(true); setShowDeleted(false); }} className={`history-btn ${showCompleted ? 'active' : ''}`}>
+          Completadas
+        </button>
+        <button onClick={() => { setShowCompleted(false); setShowDeleted(true); }} className={`history-btn ${showDeleted ? 'active' : ''}`}>
+          Eliminadas
+        </button>
       </div>
-        
+
+      <div className="todo-history-container">
+        {showCompleted && <TodoComplete />}
+        {showDeleted && <TodoDelete />}
       </div>
+
+    </div>
   );
 };
 
