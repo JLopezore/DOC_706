@@ -19,9 +19,12 @@
 ## De grafos
 - 00's
 - Redes sociales 
-- Representar conexxio
+- Representar conexiones más complejas
+- Complejo para implementar en aplicaciones actuales
+- 
 ## Semánticas
 - 10's
-- Utiliza en la AI
+- Utiliza en la AI, ontologias
 - Dependen del contexto
-- 
+- Curva de aprendizaje es grande
+## Parcial 2, Grafos y orientadas a objetos
