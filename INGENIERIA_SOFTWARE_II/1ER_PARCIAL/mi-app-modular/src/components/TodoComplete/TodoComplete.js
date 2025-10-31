@@ -26,6 +26,24 @@ const TodoComplete = () => {
     return () => unsubscribe();
   }, []);
 
+  // --- MOVER TAREA A 'NO COMPLETADA' ---
+  const handleUncompleteTask = async (taskToUncomplete) => {
+    try {
+      // 1. Añadir la tarea de nuevo a la colección 'tasks'
+      // Se usa la fecha de creación original si existe, si no, la de completado.
+      await addDoc(collection(db, "tasks"), {
+        text: taskToUncomplete.text,
+        createdAt: taskToUncomplete.createdAt || taskToUncomplete.completedAt
+      });
+
+      // 2. Eliminar la tarea de la colección 'completedTasks'
+      await deleteDoc(doc(db, "completedTasks", taskToUncomplete.id));
+    } catch (error) {
+      console.error("Error al mover la tarea a no completadas: ", error);
+      alert("Hubo un error al restaurar la tarea.");
+    }
+  };
+
   // --- ELIMINAR TAREA COMPLETADA (MOVER A PAPELERA) ---
   const handleDeleteCompletedTask = async (idToDelete) => {
     const confirmed = window.confirm('¿Mover esta tarea a la papelera?');
@@ -78,6 +96,12 @@ const TodoComplete = () => {
         <ul>
           {completedTasks.map(task => (
             <li key={task.id}>
+              <input
+                type="checkbox"
+                checked={true}
+                onChange={() => handleUncompleteTask(task)}
+                className="uncomplete-checkbox"
+              />
               <span className="task-text">{task.text}</span>
               <span className="completed-date">
                 Completada: {formatDate(task.completedAt)}

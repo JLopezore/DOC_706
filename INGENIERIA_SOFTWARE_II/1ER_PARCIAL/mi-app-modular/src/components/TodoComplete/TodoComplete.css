@@ -39,6 +39,13 @@
   background-color: #f9f9f9;
 }
 
+.uncomplete-checkbox {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px; /* Espacio entre el checkbox y el texto */
+}
+
 .todo-complete-container .task-text {
   flex-grow: 1;
   color: #555;
@@ -83,4 +90,27 @@
 .app.dark .completed-date {
 
   color: #b30404;
+}
+
+/* --- MODO OSCURO --- */
+@media (prefers-color-scheme: dark) {
+  .todo-complete-container {
+    background-color: #000000;
+  }
+
+  .todo-complete-container h2 {
+    color: #fff;
+  }
+
+  .todo-complete-container li:hover {
+    background-color: #424246;
+  }
+
+  .uncomplete-checkbox {
+    filter: invert(1) hue-rotate(180deg); /* Estilo simple para modo oscuro */
+  }
+
+  .todo-complete-container .task-text {
+    color: #dcdcdc;
+  }
 }
