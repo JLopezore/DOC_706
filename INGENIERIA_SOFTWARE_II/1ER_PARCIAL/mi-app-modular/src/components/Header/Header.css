@@ -48,7 +48,9 @@
 }
 
 nav {
+  flex-grow: 1; /* Permite que nav ocupe el espacio disponible */
   display: flex;
+  justify-content: center; /* Centra los enlaces horizontalmente */
   gap: 25px;
   font-size: 25px;
 }

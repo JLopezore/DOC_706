@@ -12,14 +12,15 @@ const Header = () => {
         <h1 className="logo">Mi snoopy App</h1>
 
       </div>
-      <div className="logo-nav">
-          <nav>
+      <div className="divider">
+        <nav>
             {/* Usamos <Link> en lugar de <a href=""> */}
             <Link to="/">Inicio</Link>
             <Link to="/tareas">Tareas</Link>
             <Link to="/directorio">Directorio</Link>
           </nav>
       </div>
+      
       <div className="theme-switcher-container">
         <ThemeSwitcher />  {/* Componente para cambiar el tema */}
       </div>
