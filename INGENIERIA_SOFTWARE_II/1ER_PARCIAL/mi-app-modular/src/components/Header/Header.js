@@ -18,7 +18,7 @@ const Header = () => {
             <Link to="/">Inicio</Link>
             <Link to="/tareas">Tareas</Link>
             <Link to="/directorio">Directorio</Link>
-          </nav>
+        </nav>
       </div>
       
       <div className="theme-switcher-container">
