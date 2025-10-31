@@ -92,25 +92,5 @@
   color: #b30404;
 }
 
-/* --- MODO OSCURO --- */
-@media (prefers-color-scheme: dark) {
-  .todo-complete-container {
-    background-color: #000000;
-  }
 
-  .todo-complete-container h2 {
-    color: #fff;
-  }
 
-  .todo-complete-container li:hover {
-    background-color: #424246;
-  }
-
-  .uncomplete-checkbox {
-    filter: invert(1) hue-rotate(180deg); /* Estilo simple para modo oscuro */
-  }
-
-  .todo-complete-container .task-text {
-    color: #dcdcdc;
-  }
-}
