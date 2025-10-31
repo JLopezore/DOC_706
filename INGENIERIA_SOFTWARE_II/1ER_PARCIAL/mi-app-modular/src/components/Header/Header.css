@@ -23,8 +23,8 @@
 .logo-nav {
   display: flex;
   align-items: center;
-  gap: 300px;
-  position: relative;
+
+  justify-content: center;
 }
 
 .logo-image {
