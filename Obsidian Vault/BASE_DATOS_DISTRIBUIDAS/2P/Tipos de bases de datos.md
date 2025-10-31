@@ -13,8 +13,15 @@
 - Utilizada para simulación
 ## NoSQL
 - 90's 00's
-- 
+- Organiza mediante elementos clave-valor
+- No garantiza consistencia de datos, pero son disponibles
+- para aplicaciones en tiempo real
 ## De grafos
 - 00's
+- Redes sociales 
+- Representar conexxio
 ## Semánticas
 - 10's
+- Utiliza en la AI
+- Dependen del contexto
+- 
