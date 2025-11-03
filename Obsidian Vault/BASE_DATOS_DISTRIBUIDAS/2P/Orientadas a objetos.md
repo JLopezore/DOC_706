@@ -38,23 +38,17 @@
 - El modelo de objetos aún no tiene una teoría matemática coherente que le sirva de base.
 
 ## Características
-Caracteristicas SGBD + el sistema orientado a objetos 
+Caracteristicas SGBD 
 - Persistente
 - Concurrente
 - Recuperación ante fallos
 - Gestión de almacenamiento secundario
 - Facilidad de consultas
 
-
++
+el sistema orientado a objetos 
 - Identidad
 - Encapsulación
 - Herencia
 - Polimorfismo
 - Control de tipos y persitencia (Descables)
-
-
-- identidad 
-- Encapsulación 
-- Persistencia 
-- control de tipos 
- 
