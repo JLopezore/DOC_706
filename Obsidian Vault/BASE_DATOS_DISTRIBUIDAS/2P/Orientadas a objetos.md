@@ -21,4 +21,10 @@
 - Proporciona potencia la diseñado al permitirle especificar tanto la estructura de objetos complejos, como las operaciones que se pueden aplicar sobre dichos objetos.
 - Integrar directamente con aplicaciones desarrolladas con lenguajes orienteados a objetos.
 - tratar directamente con directos, no teniendo que hacer la tradcción a tablas o registros.
-- Los objetos se conservan, pueden ser gestionados aunque su tamaño sea grande, pueden ser copmpartidos 
+- Los objetos se conservan, pueden ser gestionados aunque su tamaño sea grande, pueden ser copmpartidos entre múltiples usuarios y mantienen su integridad como sus relaciones.
+
+
+- Mayor capacidad de modelado:
+	- Un objeto permite encapsular tanto un estado como un comportamiento 
+- Ampliabilidad 
+- Lengu
