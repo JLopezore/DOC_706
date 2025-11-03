@@ -30,9 +30,31 @@
 - Lenguaje de consulta más expresivo
 
 ## Desventaja
-- Carencia de un modelo de dat
+- Carencia de un modelo de datos universal
 - Carencia de experiencia
 - Carencia de estándares
 - Competencia
 - La optimización de consultas compromete la encapsulación
 - El modelo de objetos aún no tiene una teoría matemática coherente que le sirva de base.
+
+## Características
+Caracteristicas SGBD + el sistema orientado a objetos 
+- Persistente
+- Concurrente
+- Recuperación ante fallos
+- Gestión de almacenamiento secundario
+- Facilidad de consultas
+
+
+- Identidad
+- Encapsulación
+- Herencia
+- Polimorfismo
+- Control de tipos y persitencia (Descables)
+
+
+- identidad 
+- Encapsulación 
+- Persistencia 
+- control de tipos 
+ 
