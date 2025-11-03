@@ -27,4 +27,12 @@
 - Mayor capacidad de modelado:
 	- Un objeto permite encapsular tanto un estado como un comportamiento 
 - Ampliabilidad 
-- Lengu
+- Lenguaje de consulta más expresivo
+
+## Desventaja
+- Carencia de un modelo de dat
+- Carencia de experiencia
+- Carencia de estándares
+- Competencia
+- La optimización de consultas compromete la encapsulación
+- El modelo de objetos aún no tiene una teoría matemática coherente que le sirva de base.
