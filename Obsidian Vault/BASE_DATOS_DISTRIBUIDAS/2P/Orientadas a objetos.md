@@ -9,4 +9,11 @@
 - Es un SGBD
 ### Comparación de Arquitecturas
 - Mayor tiempo de desarrollo
+
+## Ventajas
+- se reduce la distancia entre el modelo conceptual de datos y el modelo lógico
+- Simplifica la conceptualización
+- Mejoran comunicacion entre usuarios, desarrolladores y analistas
+
+## Ventajas (documento)
 - 
