@@ -10,10 +10,11 @@
 ### Comparación de Arquitecturas
 - Mayor tiempo de desarrollo
 
-## Ventajas
+## Ventajas (con respecto a relacionales)
 - se reduce la distancia entre el modelo conceptual de datos y el modelo lógico
 - Simplifica la conceptualización
 - Mejoran comunicacion entre usuarios, desarrolladores y analistas
 
 ## Ventajas (documento)
-- 
+-  Ofrece flexivilidad, no está limitada por los tipos de datos  los lenguajes de consulta de los sistemas de bases de datos tradicionales.
+- Proporciona potencia la diseñado al permitirle especificar tanto la estructura de objetos complejos, como las operaciones 
