@@ -64,3 +64,10 @@
 3. **Encapsulamiento:** Metodos publicos publicos y privados
 4. **Tipos de clases:** 
 5. **Jerarquias de tipos o clases:** Un subtipo o subclase heredara de una superclase.
+6. **Sobrecarga:** Los metodos deben 
+7. **El conjunto debe ser extensible:*
+8. **Persistencia de los datos:** 
+9. **Debe ser capaz de manejar grandes BD**
+10. **Concurrencia:** Debe disponer de mecanismos para el control de concurrencia
+11. **Recurrencia**
+12. **F
