@@ -57,8 +57,10 @@
 ## Enfoques
 ### Purista 
 ### Híbrido o evolutivo
+Base un sistema relacional con agrecion de un sistema orientado a objetos.
 
 ## Manifiesto de los SGBD orientados a objetos
+falta 1
 1. Objetos complejos: permitir aplicando constructores
 2. **Identidad del objeto:** Cada objeto se identifica con su id
 3. **Encapsulamiento:** Metodos publicos publicos y privados
@@ -70,4 +72,21 @@
 9. **Debe ser capaz de manejar grandes BD**
 10. **Concurrencia:** Debe disponer de mecanismos para el control de concurrencia
 11. **Recurrencia**
-12. **F
+12. **Facilidad de consultas:** 
+
+## Tipos de SGBDOO
+
+|     |     |
+| --- | --- |
+|     |     |
+
+## Modelado de Objetos
+### Modelo de datos
+Caracteriza el omportamiento de todo SGBD
+### Modelo de objetos
+Caracteriza el compotamiento de los SGBDOO
+
+## ODMG 
+Objetct Database Management Group
+- Consorcio industrial de venderores d eSGBDOO 
+- No es una organización de estandares acrediata pero
