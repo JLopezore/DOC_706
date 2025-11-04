@@ -169,13 +169,8 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "c572809f7aedf1ff",
+  "active": "665439e0e71c6d6d",
   "lastOpenFiles": [
-    "CockroachDB.md",
-    "Welcome.md",
-    "Base de datos distribuida.md",
-    "Base de datos.md",
-    "Derecho/1er-parcial/derecho.md",
     "iNGENIERIA SOFTWARE/Repaso.md",
     "iNGENIERIA SOFTWARE/Refactorización usando svg para iconos.md",
     "iNGENIERIA SOFTWARE/Ingenieria software.md",
@@ -204,6 +199,11 @@
     "BASE_DATOS_DISTRIBUIDAS/P1/Modelos.md",
     "BASE_DATOS_DISTRIBUIDAS/P1/Manejadores de Bases de Datos Distribuidas.md",
     "BASE_DATOS_DISTRIBUIDAS/P1/Instalar CockroackDB.md",
+    "BASE_DATOS_DISTRIBUIDAS/P1/Fragmentación.md",
+    "BASE_DATOS_DISTRIBUIDAS/P1/Fragmentacion.md",
+    "BASE_DATOS_DISTRIBUIDAS/P1/DBSS.md",
+    "BASE_DATOS_DISTRIBUIDAS/P1/DB distribuidas.md",
+    "BASE_DATOS_DISTRIBUIDAS/P1/Concepto de DDBS (Distributed databas system).md",
     "BASE_DATOS_DISTRIBUIDAS/P1/Cliente-Servidor.canvas",
     "BASE_DATOS_DISTRIBUIDAS/P1",
     "BASE_DATOS_DISTRIBUIDAS/Cockroach",

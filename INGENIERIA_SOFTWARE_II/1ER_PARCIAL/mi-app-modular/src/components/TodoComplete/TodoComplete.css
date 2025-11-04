@@ -1,0 +1,96 @@
+.todo-complete-container {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 600px;
+  background-color: #f0f4f8;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(27, 71, 194, 0.08);
+}
+
+.todo-complete-container h2 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.no-completed-tasks {
+  text-align: center;
+  color: #777;
+  font-style: italic;
+}
+
+.todo-complete-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.todo-complete-container li {
+  padding: 15px;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  transition: background-color 0.2s;
+}
+
+.todo-complete-container li:hover {
+  background-color: #f9f9f9;
+}
+
+.uncomplete-checkbox {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px; /* Espacio entre el checkbox y el texto */
+}
+
+.todo-complete-container .task-text {
+  flex-grow: 1;
+  color: #555;
+  text-decoration: line-through;
+}
+
+.completed-date {
+  font-size: 0.85em;
+  color: #888;
+  white-space: nowrap;
+}
+
+.delete-btn {
+  padding: 5px 10px;
+  border: none;
+  background-color: #ef5350;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+.delete-btn:hover {
+  background-color: #d32f2f;
+}
+
+.app.dark .todo-complete-container {
+  background-color: #000000;
+}
+
+
+
+.app.dark .todo-complete-container h2 {
+  color: #fff;
+}
+
+.app.dark .todo-complete-container li {
+  background-color: #3a3f4b;
+}
+
+.app.dark .completed-date {
+
+  color: #b30404;
+}
+
+
+

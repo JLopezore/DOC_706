@@ -1,0 +1,165 @@
+{
+  "main": {
+    "id": "116577da9d1b7c8a",
+    "type": "split",
+    "children": [
+      {
+        "id": "91c771cec3ab1228",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8e31ffc6d593b3d1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "BASE_DATOS_DISTRIBUIDAS/P1/Concepto de DDBS (Distributed databas system).md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Concepto de DDBS (Distributed databas system)"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "76cfabf947ca2fcd",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "cfc9f3bd2f2ba5cb",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {
+            "sortOrder": "alphabetical",
+            "autoReveal": false
+          },
+          "icon": "lucide-folder-closed",
+          "title": "Files"
+        }
+      },
+      {
+        "id": "1a9f20d418889971",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
+          },
+          "icon": "lucide-search",
+          "title": "Search"
+        }
+      },
+      {
+        "id": "0a40f2ad22dddd4c",
+        "type": "leaf",
+        "state": {
+          "type": "tag",
+          "state": {
+            "sortOrder": "frequency",
+            "useHierarchy": true,
+            "showSearch": false,
+            "searchQuery": ""
+          },
+          "icon": "lucide-tags",
+          "title": "Tags"
+        }
+      },
+      {
+        "id": "be2acd6daebfba16",
+        "type": "leaf",
+        "state": {
+          "type": "bookmarks",
+          "state": {},
+          "icon": "lucide-bookmark",
+          "title": "Bookmarks"
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "right": {
+    "id": "09019140b66e64b7",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "8f16ca840570ee6d",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "file": "Proyecto Horarios/Endpoints.md",
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
+          },
+          "icon": "links-coming-in",
+          "title": "Backlinks"
+        }
+      },
+      {
+        "id": "3f024bc598d307d4",
+        "type": "leaf",
+        "state": {
+          "type": "outgoing-link",
+          "state": {
+            "file": "Proyecto Horarios/Reunión 2 API Calendarización.md",
+            "linksCollapsed": false,
+            "unlinkedCollapsed": true
+          },
+          "icon": "links-going-out",
+          "title": "Outgoing links"
+        }
+      },
+      {
+        "id": "4f7b6c8a6589f6c7",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {
+            "file": "Proyecto Horarios/Reunión 2 API Calendarización.md",
+            "followCursor": false,
+            "showSearch": false,
+            "searchQuery": ""
+          },
+          "icon": "lucide-list",
+          "title": "Outline"
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "8e31ffc6d593b3d1",
+  "lastOpenFiles": [
+    "BASE_DATOS_DISTRIBUIDAS/P1/Componentes Base de datos distribuida.md",
+    "Prueba para script.md",
+    "Proyecto Horarios/Endpoints.md",
+    "BASE_DATOS_DISTRIBUIDAS/DB distribuidas.md",
+    "Proyecto Horarios/Reunión 2 API Calendarización.md",
+    "Proyecto Horarios/DB.md"
+  ]
+}
