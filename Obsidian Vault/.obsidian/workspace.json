@@ -11,10 +11,14 @@
             "id": "c572809f7aedf1ff",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Base de datos distribuida.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Nueva pestaña"
+              "title": "Base de datos distribuida"
             }
           }
         ]
@@ -165,30 +169,46 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "665439e0e71c6d6d",
+  "active": "c572809f7aedf1ff",
   "lastOpenFiles": [
-    "iNGENIERIA SOFTWARE/Repaso.md",
+    "CockroachDB.md",
+    "Welcome.md",
+    "Base de datos distribuida.md",
+    "Base de datos.md",
     "Derecho/1er-parcial/derecho.md",
-    "Derecho/1er-parcial",
-    "Derecho",
+    "iNGENIERIA SOFTWARE/Repaso.md",
+    "iNGENIERIA SOFTWARE/Refactorización usando svg para iconos.md",
+    "iNGENIERIA SOFTWARE/Ingenieria software.md",
+    "iNGENIERIA SOFTWARE/Base de datos.md",
+    "iNGENIERIA SOFTWARE",
+    "Untitled.md",
+    "TEC_WEB_II/1ER_SEMESTRE/Docker.md",
+    "TEC_WEB_II/1ER_SEMESTRE",
+    "TEC_WEB_II",
+    "Prueba para script.md",
+    "Proyecto Horarios/Reunión 2 API Calendarización.md",
+    "Proyecto Horarios/Requisitos del Proyecto de Horarios de Exámenes (Área de Salud).md",
     "Proyecto Horarios/Endpoints.md",
     "Proyecto Horarios/DB.md",
-    "BASE_DATOS_DISTRIBUIDAS/P1/Concepto de DDBS (Distributed databas system).md",
-    "BASE_DATOS_DISTRIBUIDAS/P1/Componentes Base de datos distribuida.md",
-    "BASE_DATOS_DISTRIBUIDAS/Cockroach/Fragmentacion.md",
-    "BASE_DATOS_DISTRIBUIDAS/P1/Modelos.md",
-    "BASE_DATOS_DISTRIBUIDAS/P1/Peer to peer.canvas",
-    "BASE_DATOS_DISTRIBUIDAS/P1/Sistemas de Administración de Bases de Datos Distribuidas (DDBMS).md",
-    "BASE_DATOS_DISTRIBUIDAS/P1/Promesas de los DDBS.md",
-    "BASE_DATOS_DISTRIBUIDAS/P1/Ventajas de DDBMS.md",
-    "BASE_DATOS_DISTRIBUIDAS/P1/DBSS.md",
-    "BASE_DATOS_DISTRIBUIDAS/P1/Cliente-Servidor.canvas",
+    "Proyecto Horarios",
+    "Pasted image 20251024113845.png",
+    "PROBABILIDAD_ESTADISTICA/Reporte 1er parcial.md",
+    "PROBABILIDAD_ESTADISTICA/COVARIANZA.md",
+    "PROBABILIDAD_ESTADISTICA",
     "DDBMS.md",
+    "BASE_DATOS_DISTRIBUIDAS/P1/Ventajas de DDBMS.md",
+    "BASE_DATOS_DISTRIBUIDAS/P1/Sistemas de Administración de Bases de Datos Distribuidas (DDBMS).md",
+    "BASE_DATOS_DISTRIBUIDAS/P1/Repaso.md",
+    "BASE_DATOS_DISTRIBUIDAS/P1/Promesas de los DDBS.md",
+    "BASE_DATOS_DISTRIBUIDAS/P1/Peer to peer.canvas",
+    "BASE_DATOS_DISTRIBUIDAS/P1/Modelos.md",
     "BASE_DATOS_DISTRIBUIDAS/P1/Manejadores de Bases de Datos Distribuidas.md",
+    "BASE_DATOS_DISTRIBUIDAS/P1/Instalar CockroackDB.md",
+    "BASE_DATOS_DISTRIBUIDAS/P1/Cliente-Servidor.canvas",
     "BASE_DATOS_DISTRIBUIDAS/P1",
-    "BASE_DATOS_DISTRIBUIDAS/Cockroach/Instalación CocroachDB.md",
-    "BASE_DATOS_DISTRIBUIDAS/Cockroach/Nodos CockroachDB.md",
-    "BASE_DATOS_DISTRIBUIDAS/Cockroach/Conectarse CockroachDB.md",
-    "BASE_DATOS_DISTRIBUIDAS/Cockroach"
+    "BASE_DATOS_DISTRIBUIDAS/Cockroach",
+    "BASE_DATOS_DISTRIBUIDAS/2P",
+    "BASE_DATOS_DISTRIBUIDAS",
+    "Derecho/1er-parcial"
   ]
 }
