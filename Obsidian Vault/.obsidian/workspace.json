@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Base de datos distribuida.md",
+                "file": "BASE_DATOS_DISTRIBUIDAS/2P/Orientadas a objetos.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Base de datos distribuida"
+              "title": "Orientadas a objetos"
             }
           }
         ]
@@ -171,6 +171,8 @@
   },
   "active": "665439e0e71c6d6d",
   "lastOpenFiles": [
+    "BASE_DATOS_DISTRIBUIDAS/2P/Tipos de bases de datos.md",
+    "Base de datos distribuida.md",
     "iNGENIERIA SOFTWARE/Repaso.md",
     "iNGENIERIA SOFTWARE/Refactorización usando svg para iconos.md",
     "iNGENIERIA SOFTWARE/Ingenieria software.md",
@@ -202,8 +204,6 @@
     "BASE_DATOS_DISTRIBUIDAS/P1/Fragmentación.md",
     "BASE_DATOS_DISTRIBUIDAS/P1/Fragmentacion.md",
     "BASE_DATOS_DISTRIBUIDAS/P1/DBSS.md",
-    "BASE_DATOS_DISTRIBUIDAS/P1/DB distribuidas.md",
-    "BASE_DATOS_DISTRIBUIDAS/P1/Concepto de DDBS (Distributed databas system).md",
     "BASE_DATOS_DISTRIBUIDAS/P1/Cliente-Servidor.canvas",
     "BASE_DATOS_DISTRIBUIDAS/P1",
     "BASE_DATOS_DISTRIBUIDAS/Cockroach",
