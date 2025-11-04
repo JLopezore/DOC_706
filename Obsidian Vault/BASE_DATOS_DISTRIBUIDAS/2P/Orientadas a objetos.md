@@ -56,4 +56,11 @@
 
 ## Enfoques
 ### Purista 
-### Hibrido o evolutivo
+### Híbrido o evolutivo
+
+## Manifiesto de los SGBD orientados a objetos
+1. Objetos complejos: permitir aplicando constructores
+2. **Identidad del objeto:** Cada objeto se identifica con su id
+3. **Encapsulamiento:** Metodos publicos publicos y privados
+4. **Tipos de clases:** 
+5. **Jerarquias de tipos o clases:** Un subtipo o subclase heredara de una superclase.
