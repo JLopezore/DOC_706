@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Proyecto Horarios/Endpoints.md",
+                "file": "BASE_DATOS_DISTRIBUIDAS/2P/Orientadas a objetos.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Endpoints"
+              "title": "Orientadas a objetos"
             }
           }
         ]
@@ -171,6 +171,8 @@
   },
   "active": "c572809f7aedf1ff",
   "lastOpenFiles": [
+    "BASE_DATOS_DISTRIBUIDAS/2P/Tipos de bases de datos.md",
+    "Proyecto Horarios/Endpoints.md",
     "Proyecto Horarios/DB.md",
     "Welcome.md",
     "Untitled.md",
@@ -178,7 +180,6 @@
     "General",
     "iNGENIERIA SOFTWARE/Pasted image 20251024113845.png",
     "BASE_DATOS_DISTRIBUIDAS/2P/Orientadas a objetos.md",
-    "BASE_DATOS_DISTRIBUIDAS/2P/Tipos de bases de datos.md",
     "BASE_DATOS_DISTRIBUIDAS/Base de datos distribuida.md",
     "iNGENIERIA SOFTWARE/Repaso.md",
     "iNGENIERIA SOFTWARE/Refactorización usando svg para iconos.md",
@@ -190,7 +191,6 @@
     "TEC_WEB_II",
     "Proyecto Horarios/Reunión 2 API Calendarización.md",
     "Proyecto Horarios/Requisitos del Proyecto de Horarios de Exámenes (Área de Salud).md",
-    "Proyecto Horarios/Endpoints.md",
     "Proyecto Horarios",
     "PROBABILIDAD_ESTADISTICA/Reporte 1er parcial.md",
     "PROBABILIDAD_ESTADISTICA/COVARIANZA.md",

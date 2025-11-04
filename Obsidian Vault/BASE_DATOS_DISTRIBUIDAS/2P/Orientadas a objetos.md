@@ -46,6 +46,7 @@ Caracteristicas SGBD
 - Facilidad de consultas
 
 +
+
 el sistema orientado a objetos 
 - Identidad
 - Encapsulación
