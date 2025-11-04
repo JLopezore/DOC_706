@@ -11,14 +11,10 @@
             "id": "c572809f7aedf1ff",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "BASE_DATOS_DISTRIBUIDAS/2P/Orientadas a objetos.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Orientadas a objetos"
+              "title": "Nueva pestaña"
             }
           }
         ]
@@ -171,28 +167,31 @@
   },
   "active": "665439e0e71c6d6d",
   "lastOpenFiles": [
+    "Untitled.md",
+    "Welcome.md",
+    "General/Prueba para script.md",
+    "General",
+    "iNGENIERIA SOFTWARE/Pasted image 20251024113845.png",
+    "BASE_DATOS_DISTRIBUIDAS/2P/Orientadas a objetos.md",
     "BASE_DATOS_DISTRIBUIDAS/2P/Tipos de bases de datos.md",
-    "Base de datos distribuida.md",
+    "BASE_DATOS_DISTRIBUIDAS/Base de datos distribuida.md",
     "iNGENIERIA SOFTWARE/Repaso.md",
     "iNGENIERIA SOFTWARE/Refactorización usando svg para iconos.md",
     "iNGENIERIA SOFTWARE/Ingenieria software.md",
     "iNGENIERIA SOFTWARE/Base de datos.md",
     "iNGENIERIA SOFTWARE",
-    "Untitled.md",
     "TEC_WEB_II/1ER_SEMESTRE/Docker.md",
     "TEC_WEB_II/1ER_SEMESTRE",
     "TEC_WEB_II",
-    "Prueba para script.md",
     "Proyecto Horarios/Reunión 2 API Calendarización.md",
     "Proyecto Horarios/Requisitos del Proyecto de Horarios de Exámenes (Área de Salud).md",
     "Proyecto Horarios/Endpoints.md",
     "Proyecto Horarios/DB.md",
     "Proyecto Horarios",
-    "Pasted image 20251024113845.png",
     "PROBABILIDAD_ESTADISTICA/Reporte 1er parcial.md",
     "PROBABILIDAD_ESTADISTICA/COVARIANZA.md",
     "PROBABILIDAD_ESTADISTICA",
-    "DDBMS.md",
+    "BASE_DATOS_DISTRIBUIDAS/DDBMS.md",
     "BASE_DATOS_DISTRIBUIDAS/P1/Ventajas de DDBMS.md",
     "BASE_DATOS_DISTRIBUIDAS/P1/Sistemas de Administración de Bases de Datos Distribuidas (DDBMS).md",
     "BASE_DATOS_DISTRIBUIDAS/P1/Repaso.md",
@@ -202,13 +201,10 @@
     "BASE_DATOS_DISTRIBUIDAS/P1/Manejadores de Bases de Datos Distribuidas.md",
     "BASE_DATOS_DISTRIBUIDAS/P1/Instalar CockroackDB.md",
     "BASE_DATOS_DISTRIBUIDAS/P1/Fragmentación.md",
-    "BASE_DATOS_DISTRIBUIDAS/P1/Fragmentacion.md",
-    "BASE_DATOS_DISTRIBUIDAS/P1/DBSS.md",
     "BASE_DATOS_DISTRIBUIDAS/P1/Cliente-Servidor.canvas",
     "BASE_DATOS_DISTRIBUIDAS/P1",
     "BASE_DATOS_DISTRIBUIDAS/Cockroach",
     "BASE_DATOS_DISTRIBUIDAS/2P",
-    "BASE_DATOS_DISTRIBUIDAS",
-    "Derecho/1er-parcial"
+    "BASE_DATOS_DISTRIBUIDAS"
   ]
 }
