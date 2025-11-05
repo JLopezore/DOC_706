@@ -87,6 +87,6 @@ Caracteriza el omportamiento de todo SGBD
 Caracteriza el compotamiento de los SGBDOO
 
 ## ODMG 
-Objetct Database Management Group
-- Consorcio industrial de venderores d eSGBDOO 
-- No es una organización de estandares acrediata pero
+- Objetct Database Management Group
+- Consorcio industrial de vendedores de SGBDOO 
+- No es una organización de estándares acredita pero tiene mucha influencia en lo que respecta a estándares de SGBDOO
