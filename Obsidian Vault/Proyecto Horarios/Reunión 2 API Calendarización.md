@@ -21,3 +21,5 @@
 - 
 
 Prueba
+
+academia por materia (mestros que dan la clase y los sinodales)
