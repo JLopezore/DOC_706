@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Proyecto Horarios/Reunión 2 API Calendarización.md",
+                "file": "BASE_DATOS_DISTRIBUIDAS/2P/Gestores de Bases de Datos Objeto-Relacionales (SGBDOR).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Reunión 2 API Calendarización"
+              "title": "Gestores de Bases de Datos Objeto-Relacionales (SGBDOR)"
             }
           }
         ]
@@ -171,6 +171,9 @@
   },
   "active": "c572809f7aedf1ff",
   "lastOpenFiles": [
+    "Proyecto Horarios/Reunión 2 API Calendarización.md",
+    "BASE_DATOS_DISTRIBUIDAS/2P/Gestores de Bases de Datos Objeto-Relacionales (SGBDOR).md",
+    "Untitled 1",
     "BASE_DATOS_DISTRIBUIDAS/2P/Orientadas a objetos.md",
     "BASE_DATOS_DISTRIBUIDAS/2P/Tipos de bases de datos.md",
     "Proyecto Horarios/Endpoints.md",
@@ -189,7 +192,6 @@
     "TEC_WEB_II/1ER_SEMESTRE/Docker.md",
     "TEC_WEB_II/1ER_SEMESTRE",
     "TEC_WEB_II",
-    "Proyecto Horarios/Reunión 2 API Calendarización.md",
     "Proyecto Horarios/Requisitos del Proyecto de Horarios de Exámenes (Área de Salud).md",
     "Proyecto Horarios",
     "PROBABILIDAD_ESTADISTICA/Reporte 1er parcial.md",
@@ -204,11 +206,9 @@
     "BASE_DATOS_DISTRIBUIDAS/P1/Modelos.md",
     "BASE_DATOS_DISTRIBUIDAS/P1/Manejadores de Bases de Datos Distribuidas.md",
     "BASE_DATOS_DISTRIBUIDAS/P1/Instalar CockroackDB.md",
-    "BASE_DATOS_DISTRIBUIDAS/P1/Fragmentación.md",
     "BASE_DATOS_DISTRIBUIDAS/P1/Cliente-Servidor.canvas",
     "BASE_DATOS_DISTRIBUIDAS/P1",
     "BASE_DATOS_DISTRIBUIDAS/Cockroach",
-    "BASE_DATOS_DISTRIBUIDAS/2P",
-    "BASE_DATOS_DISTRIBUIDAS"
+    "BASE_DATOS_DISTRIBUIDAS/2P"
   ]
 }
