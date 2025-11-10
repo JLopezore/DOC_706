@@ -15,5 +15,8 @@
 ````bash
 yay -S anydesk
 ````
-
+2. Habilitar/activar el servicio (opcional)
+````bash
+sudo systemctl enable --now anydesk.service
+````
 ## 2. 
