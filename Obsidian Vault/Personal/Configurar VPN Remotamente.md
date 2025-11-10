@@ -3,6 +3,7 @@ Esta guía te mostrará cómo configurar un servidor VPN **L2TP/IPsec** en tu ro
 ## Motivos 
 - **Es Rápido:** Utiliza la aceleración de hardware IPsec de tu router.
 - **Es Compatible:** Prácticamente todos los sistemas operativos (Windows, macOS, Linux, Android, iOS) tienen un cliente L2TP incorporado, por lo que no necesitas instalar software adicional en tus dispositivos.
+# Antes de todo realiza un backup
 ## 1. Instalar escritorio remoto
 ### PC 1 (Ubuntu)
 1. Descargar AnyDesk
@@ -34,3 +35,8 @@ Desde el navegador entrar a la pagina de administración del router, ip de la pu
 
 ## 4. Crear un "Pool" de IPs para la VPN
 Definimos un rango de direcciones IP que se asignarán a los dispositivos que se conecten.
+Menu->IP -> Pool -> Add new 
+Name: vpn-pool
+Addresses: 192.168.100.10-50
+
+**Equivlente en terminal**
