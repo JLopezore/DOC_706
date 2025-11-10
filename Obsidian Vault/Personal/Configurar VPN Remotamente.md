@@ -19,4 +19,7 @@ yay -S anydesk
 ````bash
 sudo systemctl enable --now anydesk.service
 ````
-## 2. 
+## 2. Revisar IP publica
+1. Verificar si es ip estatica o dinamica: entrar a la pagina 
+2. 
+ 
