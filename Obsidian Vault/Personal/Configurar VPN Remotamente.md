@@ -36,7 +36,24 @@ Desde el navegador entrar a la pagina de administración del router, ip de la pu
 ## 4. Crear un "Pool" de IPs para la VPN
 Definimos un rango de direcciones IP que se asignarán a los dispositivos que se conecten.
 Menu->IP -> Pool -> Add new 
-Name: vpn-pool
-Addresses: 192.168.100.10-50
+**Name:** vpn-pool
+**Addresses:** 192.168.100.10-50
 
-**Equivlente en terminal**
+**Equivalente en terminal**
+````bash
+/ip pool add name=vpn-pool ranges=192.168.100.10-192.168.100.50
+````
+
+## 5. Configurar el perfil PPP
+Aquí definimos los DNS que usarán los clientes VPN.
+Menú: PPP -> Profiles -> default-encryption
+**Local Address:** `192.168.88.1` (La IP de tu router)
+**Remote Address:** `vpn-pool` (El pool que creamos en el paso 1)
+**DNS Server:** `192.168.88.1` (o puedes usar `8.8.8.8`)
+
+**Equivalente en terminal**
+````
+/ppp profile set default-encryption local-address=192.168.88.1 remote-address=vpn-pool dns-server=192.168.88.1
+````
+
+## 6. 
