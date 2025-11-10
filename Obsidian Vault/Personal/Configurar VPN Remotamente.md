@@ -56,4 +56,30 @@ Menú: PPP -> Profiles -> default-encryption
 /ppp profile set default-encryption local-address=192.168.88.1 remote-address=vpn-pool dns-server=192.168.88.1
 ````
 
-## 6. 
+## 6. Activar el Servidor L2TP
+Aquí es donde "encendemos" la VPN y definimos la clave secreta.
+**Menú:** `PPP` -> `Interface` -> **L2TP Server**.
+Marca la casilla `Enabled`.
+**Default Profile:** `default-encryption`
+Marca la casilla `Use IPsec`.
+**IPsec Secret:** Escribe una contraseña larga y segura. **¡Esta es tu clave pre-compartida (PSK)!** Anótala bien.
+Haz clic en **OK**.
+    
+> **Equivalente en Terminal:** `/interface l2tp-server server set enabled=yes use-ipsec=yes ipsec-secret="TuClaveSecretaMuyFuerte" default-profile=default-encryption`
+
+## 7. Crear usuarios (secrets)
+Se crea usuario y contraseña
+**Menú:** `PPP` -> `Secrets` -> `Add New`.
+**Name:** Escribe un nombre de usuario (ej. `laptop-t14`)
+**Password:** Escribe una contraseña fuerte para _este usuario_.
+**Service:** `l2tp`
+**Profile:** `default-encryption`
+Haz clic en **OK**.
+
+> **Equivalente en Terminal:** `/ppp secret add name=laptop-t14 password="PasswordFuerteParaElUsuario" service=l2tp profile=default-encryption`
+
+## 8. Configurar el Firewall (critico)
+Debemos abrir los puertos necesarios en el firewall para permitir que la conexión VPN entre desde Internet.
+- **Menú:** `IP` -> `Firewall` -> Pestaña `Filter Rules`
+    
+- **Importante:** Añade estas reglas **al principio de la lista** (puedes arrastrarlas hacia arriba). Deben estar _antes_ de cualquier regla que diga "drop".
