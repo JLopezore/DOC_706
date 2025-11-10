@@ -30,4 +30,7 @@ sudo systemctl enable --now anydesk.service
 3. Si es dinamica se debe configurar un servicio #DDNS en #MikroTik
 
 ## 3. Acceder al router 
-1. Desde el navegador entrar a la pagina de administración del router, ip de la puerta de enlace
+Desde el navegador entrar a la pagina de administración del router, ip de la puerta de enlace
+
+## 4. Crear un "Pool" de IPs para la VPN
+Definimos un rango de direcciones IP que se asignarán a los dispositivos que se conecten.
