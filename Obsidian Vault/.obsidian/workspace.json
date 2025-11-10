@@ -35,8 +35,7 @@
               "title": "Fragmentacion"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -184,8 +183,9 @@
       "bases:Create new base": false
     }
   },
-  "active": "b72162631fa15b68",
+  "active": "c572809f7aedf1ff",
   "lastOpenFiles": [
+    "BASE_DATOS_DISTRIBUIDAS/Cockroach/Fragmentacion.md",
     "TEC_WEB_II/1ER_SEMESTRE/Docker.md",
     "Proyecto Horarios/Endpoints.md",
     "Personal/Configurar VPN Remotamente.md",
