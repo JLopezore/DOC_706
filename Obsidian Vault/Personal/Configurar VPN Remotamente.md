@@ -20,6 +20,8 @@ yay -S anydesk
 sudo systemctl enable --now anydesk.service
 ````
 ## 2. Revisar IP publica
-1. Verificar si es ip estatica o dinamica: entrar a la pagina 
-2. 
+1. Verificar si es ip estatica o dinamica: entrar a la pagina www.whatismyip.com 
+2. Anotar la ip publica
+3. Si es dinamica se debe configurar un servicio #DDNS en #MikroTik
+4. 
  
