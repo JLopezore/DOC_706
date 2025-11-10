@@ -80,6 +80,37 @@ Haz clic en **OK**.
 
 ## 8. Configurar el Firewall (critico)
 Debemos abrir los puertos necesarios en el firewall para permitir que la conexión VPN entre desde Internet.
-- **Menú:** `IP` -> `Firewall` -> Pestaña `Filter Rules`
-    
-- **Importante:** Añade estas reglas **al principio de la lista** (puedes arrastrarlas hacia arriba). Deben estar _antes_ de cualquier regla que diga "drop".
+**Menú:** `IP` -> `Firewall` -> `Filter Rules`
+**Importante:** Añade estas reglas **al principio de la lista** (puedes arrastrarlas hacia arriba). Deben estar _antes_ de cualquier regla que diga "drop".
+
+**Regla 1: Permitir IKE (Puerto 500)**
+- `Add New` -> `General`
+- **Chain:** `input`
+- **Protocol:** `17 (udp)`
+- **Dst. Port:** `500`
+- Pestaña `Action` -> **Action:** `accept`
+- Haz clic en **OK**.
+
+**Regla 2: Permitir NAT-T (Puerto 4500)**
+- `Add New` -> Pestaña `General`
+- **Chain:** `input`
+- **Protocol:** `17 (udp)`
+- **Dst. Port:** `4500`
+- Pestaña `Action` -> **Action:** `accept`
+- Haz clic en **OK**.
+
+**Regla 3: Permitir IPsec-ESP**
+- `Add New` -> Pestaña `General`
+- **Chain:** `input`
+- **Protocol:** `50 (ipsec-esp)`
+- Pestaña `Action` -> **Action:** `accept`
+- Haz clic en **OK**.
+
+**Equivalente en Terminal:**
+```
+/ip firewall filter add chain=input protocol=udp dst-port=500 action=accept comment="Allow IKE"
+/ip firewall filter add chain=input protocol=udp dst-port=4500 action=accept comment="Allow NAT-T"
+/ip firewall filter add chain=input protocol=ipsec-esp action=accept comment="Allow ESP"
+```
+_(Nota: Arrástralas al inicio de la lista: `/ip firewall filter move [numbers] destination=0`)_
+
