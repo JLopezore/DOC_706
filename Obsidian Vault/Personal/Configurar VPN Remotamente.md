@@ -114,3 +114,15 @@ Debemos abrir los puertos necesarios en el firewall para permitir que la conexi�
 ```
 _(Nota: Arrástralas al inicio de la lista: `/ip firewall filter move [numbers] destination=0`)_
 
+## 9. Conexión de VPN
+Configurar conexión de cliente VPN
+En configuración de red, agregar conexión VPN
+**Tipo de VPN:** `L2TP/IPsec`
+**Servidor/Gateway:** Tu **IP Pública** o tu nombre **DDNS** (ej. `189.200.10.5` o `[serial].sn.mynetname.net`)
+**Nombre de Usuario:** El que creaste en el Paso 4 (ej. `laptop-t14`)
+**Contraseña:** La contraseña del _usuario_ (Paso 4).
+ **Clave Pre-compartida (PSK) / Secreto:** La que definiste en el Paso 3 (`TuClaveSecretaMuyFuerte`).
+
+## 10. Comprobación
+Desde el navegador entrar a la antena Ubiquiti https://192.168.10.120
+Se debería mostrar la pagina de gestión de la antena
