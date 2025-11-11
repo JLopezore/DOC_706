@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "BASE_DATOS_DISTRIBUIDAS/2P/bd postgres oracle task objects.md",
+                "file": "BASE_DATOS_DISTRIBUIDAS/Base de datos distribuida.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "bd postgres oracle task objects"
+              "title": "Base de datos distribuida"
             }
           },
           {
@@ -185,6 +185,9 @@
   },
   "active": "c572809f7aedf1ff",
   "lastOpenFiles": [
+    "BASE_DATOS_DISTRIBUIDAS/DDBMS.md",
+    "BASE_DATOS_DISTRIBUIDAS/CockroachDB.md",
+    "BASE_DATOS_DISTRIBUIDAS/2P/bd postgres oracle task objects.md",
     "BASE_DATOS_DISTRIBUIDAS/2P/Tipos de bases de datos.md",
     "BASE_DATOS_DISTRIBUIDAS/2P/pdf bdd.md",
     "Proyecto Horarios/DB.md",
@@ -216,10 +219,7 @@
     "PROBABILIDAD_ESTADISTICA/Reporte 1er parcial.md",
     "PROBABILIDAD_ESTADISTICA/COVARIANZA.md",
     "PROBABILIDAD_ESTADISTICA",
-    "BASE_DATOS_DISTRIBUIDAS/DDBMS.md",
     "BASE_DATOS_DISTRIBUIDAS/P1/Ventajas de DDBMS.md",
-    "BASE_DATOS_DISTRIBUIDAS/P1/Sistemas de Administración de Bases de Datos Distribuidas (DDBMS).md",
-    "BASE_DATOS_DISTRIBUIDAS/P1/Repaso.md",
     "BASE_DATOS_DISTRIBUIDAS/P1/Peer to peer.canvas",
     "BASE_DATOS_DISTRIBUIDAS/P1/Cliente-Servidor.canvas",
     "BASE_DATOS_DISTRIBUIDAS/P1",
