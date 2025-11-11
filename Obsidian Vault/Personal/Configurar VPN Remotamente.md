@@ -16,7 +16,7 @@ Esta guía te mostrará cómo configurar un servidor VPN **L2TP/IPsec** en tu ro
 	````
  Si muestra error de 'no se admite el servidor remoto de pantalla (p. ej. wayland)'
 ### Solución 
-Cerrar sesión y cambiar el sistema de servidor gra
+Cerrar sesión y cambiar el sistema de servidor gráfico de Wayland por "Gnome on Xorg", "Ubuntu on Xorg", "Plasma (X11)" o cualquier otro que mencione "X11" o "X.org", no las que digan "Gnome", "Ubuntu", "Plasma" si no funciona usar otro software
 ### PC2 (enderavourOS)
 
 1. Instalar desde AUR

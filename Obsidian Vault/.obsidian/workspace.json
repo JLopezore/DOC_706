@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Personal/DDNS en MikroTik.md",
+                "file": "Proyecto Horarios/Endpoints.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "DDNS en MikroTik"
+              "title": "Endpoints"
             }
           },
           {
@@ -34,23 +34,8 @@
               "icon": "lucide-file",
               "title": "Configurar VPN Remotamente"
             }
-          },
-          {
-            "id": "dd6bcf772334abc6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Conexión remota a antena.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Conexión remota a antena"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -198,12 +183,12 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "b72162631fa15b68",
+  "active": "c572809f7aedf1ff",
   "lastOpenFiles": [
-    "Conexión remota a antena.md",
+    "Personal/Conexión remota a antena.md",
+    "Personal/DDNS en MikroTik.md",
     "Personal/Configurar VPN Remotamente.md",
     "BASE_DATOS_DISTRIBUIDAS/Cockroach/Fragmentacion.md",
-    "Personal/DDNS en MikroTik.md",
     "TEC_WEB_II/1ER_SEMESTRE/Docker.md",
     "Proyecto Horarios/Endpoints.md",
     "BASE_DATOS_DISTRIBUIDAS/2P/Gestores de Bases de Datos Objeto-Relacionales (SGBDOR).md",
