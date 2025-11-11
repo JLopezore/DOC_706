@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Proyecto Horarios/Endpoints.md",
+                "file": "Proyecto Horarios/DB.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Endpoints"
+              "title": "DB"
             }
           },
           {
@@ -185,12 +185,12 @@
   },
   "active": "c572809f7aedf1ff",
   "lastOpenFiles": [
+    "Proyecto Horarios/Endpoints.md",
     "Personal/Conexión remota a antena.md",
     "Personal/DDNS en MikroTik.md",
     "Personal/Configurar VPN Remotamente.md",
     "BASE_DATOS_DISTRIBUIDAS/Cockroach/Fragmentacion.md",
     "TEC_WEB_II/1ER_SEMESTRE/Docker.md",
-    "Proyecto Horarios/Endpoints.md",
     "BASE_DATOS_DISTRIBUIDAS/2P/Gestores de Bases de Datos Objeto-Relacionales (SGBDOR).md",
     "Personal",
     "Proyecto Horarios/Reunión 2 API Calendarización.md",

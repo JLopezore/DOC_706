@@ -8,3 +8,5 @@
 ## Generales 
 
 ### 04 Noviembre Observaciones 
+
+### Últimos cambios de bd
