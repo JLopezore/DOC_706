@@ -14,7 +14,9 @@ Esta guía te mostrará cómo configurar un servidor VPN **L2TP/IPsec** en tu ro
 	````bash
 	sudo apt install ./anydesk_6.3.2-1_amd64.deb
 	````
-
+ Si muestra error de 'no se admite el servidor remoto de pantalla (p. ej. wayland)'
+### Solución 
+Cerrar sesión y cambiar el sistema de servidor gra
 ### PC2 (enderavourOS)
 
 1. Instalar desde AUR
