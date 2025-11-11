@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Proyecto Horarios/DB.md",
+                "file": "BASE_DATOS_DISTRIBUIDAS/2P/bd postgres oracle task objects.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "DB"
+              "title": "bd postgres oracle task objects"
             }
           },
           {
@@ -185,6 +185,9 @@
   },
   "active": "c572809f7aedf1ff",
   "lastOpenFiles": [
+    "BASE_DATOS_DISTRIBUIDAS/2P/Tipos de bases de datos.md",
+    "BASE_DATOS_DISTRIBUIDAS/2P/pdf bdd.md",
+    "Proyecto Horarios/DB.md",
     "Proyecto Horarios/Endpoints.md",
     "Personal/Conexión remota a antena.md",
     "Personal/DDNS en MikroTik.md",
@@ -196,8 +199,6 @@
     "Proyecto Horarios/Reunión 2 API Calendarización.md",
     "Untitled 1",
     "BASE_DATOS_DISTRIBUIDAS/2P/Orientadas a objetos.md",
-    "BASE_DATOS_DISTRIBUIDAS/2P/Tipos de bases de datos.md",
-    "Proyecto Horarios/DB.md",
     "Welcome.md",
     "General/Prueba para script.md",
     "General",
@@ -219,7 +220,6 @@
     "BASE_DATOS_DISTRIBUIDAS/P1/Ventajas de DDBMS.md",
     "BASE_DATOS_DISTRIBUIDAS/P1/Sistemas de Administración de Bases de Datos Distribuidas (DDBMS).md",
     "BASE_DATOS_DISTRIBUIDAS/P1/Repaso.md",
-    "BASE_DATOS_DISTRIBUIDAS/P1/Promesas de los DDBS.md",
     "BASE_DATOS_DISTRIBUIDAS/P1/Peer to peer.canvas",
     "BASE_DATOS_DISTRIBUIDAS/P1/Cliente-Servidor.canvas",
     "BASE_DATOS_DISTRIBUIDAS/P1",
