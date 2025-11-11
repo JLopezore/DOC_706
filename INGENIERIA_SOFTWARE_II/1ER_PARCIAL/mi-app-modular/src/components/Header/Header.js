@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <header className="app-header">
+    
       <div className="logo-container">
         <img src={"https://logoeps.com/wp-content/uploads/2013/05/snoopy-character-vector.png"} alt="Logo" className="logo-image" />
         <h1 className="logo">Mi snoopy App</h1>
@@ -20,7 +21,8 @@ const Header = () => {
             <Link to="/directorio">Directorio</Link>
         </nav>
       </div>
-      
+
+
       <div className="theme-switcher-container">
         <ThemeSwitcher />  {/* Componente para cambiar el tema */}
       </div>
