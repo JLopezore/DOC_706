@@ -27,15 +27,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Personal/Configurar VPN Remotamente.md",
+                "file": "iNGENIERIA SOFTWARE/2do_parcial/Notas.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Configurar VPN Remotamente"
+              "title": "Notas"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -183,8 +184,11 @@
       "bases:Create new base": false
     }
   },
-  "active": "c572809f7aedf1ff",
+  "active": "b72162631fa15b68",
   "lastOpenFiles": [
+    "Personal/Configurar VPN Remotamente.md",
+    "iNGENIERIA SOFTWARE/2do_parcial/Notas.md",
+    "iNGENIERIA SOFTWARE/2do_parcial",
     "BASE_DATOS_DISTRIBUIDAS/DDBMS.md",
     "BASE_DATOS_DISTRIBUIDAS/CockroachDB.md",
     "BASE_DATOS_DISTRIBUIDAS/2P/bd postgres oracle task objects.md",
@@ -194,7 +198,6 @@
     "Proyecto Horarios/Endpoints.md",
     "Personal/Conexión remota a antena.md",
     "Personal/DDNS en MikroTik.md",
-    "Personal/Configurar VPN Remotamente.md",
     "BASE_DATOS_DISTRIBUIDAS/Cockroach/Fragmentacion.md",
     "TEC_WEB_II/1ER_SEMESTRE/Docker.md",
     "BASE_DATOS_DISTRIBUIDAS/2P/Gestores de Bases de Datos Objeto-Relacionales (SGBDOR).md",
@@ -219,10 +222,8 @@
     "PROBABILIDAD_ESTADISTICA/Reporte 1er parcial.md",
     "PROBABILIDAD_ESTADISTICA/COVARIANZA.md",
     "PROBABILIDAD_ESTADISTICA",
-    "BASE_DATOS_DISTRIBUIDAS/P1/Ventajas de DDBMS.md",
     "BASE_DATOS_DISTRIBUIDAS/P1/Peer to peer.canvas",
     "BASE_DATOS_DISTRIBUIDAS/P1/Cliente-Servidor.canvas",
-    "BASE_DATOS_DISTRIBUIDAS/P1",
-    "BASE_DATOS_DISTRIBUIDAS/Cockroach"
+    "BASE_DATOS_DISTRIBUIDAS/P1"
   ]
 }
