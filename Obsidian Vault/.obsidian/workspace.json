@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "iNGENIERIA SOFTWARE/2do_parcial/Notas.md",
+                "file": "BASE_DATOS_DISTRIBUIDAS/2P/Oracle BDOO.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Notas"
+              "title": "Oracle BDOO"
             }
           }
         ],
@@ -59,7 +59,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "Explorador de archivos"
             }
           },
           {
@@ -175,19 +175,20 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "bases:Create new base": false
+      "switcher:Abrir selector rápido": false,
+      "graph:Abrir vista gráfica": false,
+      "canvas:Crear nuevo lienzo": false,
+      "daily-notes:Abrir la nota de hoy": false,
+      "templates:Insertar plantilla": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "bases:Crear nueva base": false
     }
   },
   "active": "b72162631fa15b68",
   "lastOpenFiles": [
-    "Personal/Configurar VPN Remotamente.md",
     "iNGENIERIA SOFTWARE/2do_parcial/Notas.md",
+    "BASE_DATOS_DISTRIBUIDAS/2P/Oracle BDOO.md",
+    "Personal/Configurar VPN Remotamente.md",
     "iNGENIERIA SOFTWARE/2do_parcial",
     "BASE_DATOS_DISTRIBUIDAS/DDBMS.md",
     "BASE_DATOS_DISTRIBUIDAS/CockroachDB.md",
@@ -220,7 +221,6 @@
     "Proyecto Horarios/Requisitos del Proyecto de Horarios de Exámenes (Área de Salud).md",
     "Proyecto Horarios",
     "PROBABILIDAD_ESTADISTICA/Reporte 1er parcial.md",
-    "PROBABILIDAD_ESTADISTICA/COVARIANZA.md",
     "PROBABILIDAD_ESTADISTICA",
     "BASE_DATOS_DISTRIBUIDAS/P1/Peer to peer.canvas",
     "BASE_DATOS_DISTRIBUIDAS/P1/Cliente-Servidor.canvas",
